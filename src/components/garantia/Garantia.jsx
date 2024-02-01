@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './garantia.css';
+import garantiaSrc from '../../assets/warranty.png';
 
 export default function Garantia() {
   return (
@@ -25,7 +25,7 @@ export default function Garantia() {
           completamente satisfecha/o.
         </motion.p>
         <img
-          src="/warranty.png"
+          src={garantiaSrc}
           alt="garantía"
           height={400}
           width={400}

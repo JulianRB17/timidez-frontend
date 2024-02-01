@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Faq from '../faq/Faq';
-import './faqs.css';
 
 export default function Faqs() {
   const faqs = [

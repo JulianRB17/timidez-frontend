@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './bonos.css';
 
 export default function Bonos() {
   return (

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import fondoImg from '../../assets/retratoPequeno.webp';
-import './bio.css';
+import fondoImg from '../../assets/bio.webp';
 
 export default function Bio() {
   return (

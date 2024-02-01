@@ -3,6 +3,18 @@
   background-color: #ffe3bc;
   color: #071a55;
   border-bottom: 10px solid #e17900;
+  display: flex;
+}
+
+.venta__img {
+  width: 40%;
+  height: fit-content;
+  margin: auto 2em auto 0;
+}
+
+.venta__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .venta__title {
@@ -12,9 +24,8 @@
   font-size: 2rem;
 }
 
-.venta__container {
+.venta__element {
   margin: 2em 0;
-  /* border: 3px solid #000821; */
   box-shadow: 1px 1px 5px #000821;
   padding: 1em;
   background-color: #071a55;
@@ -27,7 +38,16 @@
   margin: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
+  .venta {
+    flex-direction: column;
+  }
+
+  .venta__img {
+    width: 80%;
+    margin: 1em auto;
+  }
+
   .venta__title {
     font-size: 1.5rem;
   }

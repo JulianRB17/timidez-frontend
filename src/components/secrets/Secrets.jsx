@@ -1,4 +1,3 @@
-import './secrets.css';
 import { motion } from 'framer-motion';
 
 const animationVariants = {

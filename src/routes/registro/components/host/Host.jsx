@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './host.css';
 
 const variants = {
   onView: { opacity: 1, y: 0 },

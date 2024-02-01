@@ -11,13 +11,13 @@
 }
 
 .repeticion__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #e17900;
 }
 
 .repeticion__subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #000821;
 }
 
@@ -58,26 +58,33 @@
     #ffe3bc -1px 1px;
   cursor: pointer;
   font-size: 1.5rem;
-}
-
-.repeticion__link {
-  font-size: 1.5rem;
   color: #ffe3bc;
   text-decoration: none;
 }
 
-.repeticion__video-container {
-  height: 500px;
-  background-color: blue;
+.repeticion__video {
+  margin: 1em auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 750px) {
+  .repeticion__video {
+    width: 420px;
+    height: 236px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .repeticion__video {
+    width: 250px;
+    height: 140px;
+  }
+
   .repeticion__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .repeticion__subtitle {
-    font-size: 1rem;
+    font-size: 1.7rem;
   }
 
   .repeticion__text {
@@ -87,10 +94,6 @@
   .repeticion__logo {
     width: 80%;
     margin: 2em 0;
-  }
-
-  .repeticion__link {
-    font-size: 1rem;
   }
 
   .repeticion__btn {

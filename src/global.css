@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Quicksand;
+  src: url('./fonts/Quicksand-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: BebasNeue;
+  src: url('./fonts/BebasNeue-Regular.ttf');
+}
+@import url('./vendor/normalize.css');
+@import url('./vendor/vendor.css');
+
+@import url('./components/bio/bio.css');
+@import url('./components/bonos/bonos.css');
+@import url('./components/callToAction/callToAction.css');
+@import url('./components/callToActionSm/callToActionSm.css');
+@import url('./components/faqs/faqs.css');
+@import url('./components/footer/footer.css');
+@import url('./components/garantia/garantia.css');
+@import url('./components/heroVentas/heroVentas.css');
+@import url('./components/info/info.css');
+@import url('./components/intro/intro.css');
+@import url('./components/justificacion/justificacion.css');
+@import url('./components/loader/loader.css');
+@import url('./components/precio/precio.css');
+@import url('./components/presentacion/presentacion.css');
+@import url('./components/secrets/secrets.css');
+@import url('./components/venta/venta.css');
+
+@import url('./routes/cierreRegistro/cierreRegistro.css');
+@import url('./routes/cierreVenta/cierreVenta.css');
+@import url('./routes/registro/registro.css');
+@import url('./routes/registro/components/form/form.css');
+@import url('./routes/registro/components/hero/hero.css');
+@import url('./routes/registro/components/host/host.css');
+@import url('./routes/repeticion/repeticion.css');

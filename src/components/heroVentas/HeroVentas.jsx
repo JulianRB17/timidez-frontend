@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import './heroVentas.css';
+import logoSrc from '../../assets/logo-transparente.png';
 
 export default function HeroVentas() {
   return (
-    <section className="hero">
+    <section className="hero-ventas">
       <motion.h2
-        className="hero__hook"
+        className="hero-ventas__hook"
         initial={{
           opacity: 0,
           y: '-1rem',
@@ -22,15 +22,15 @@ export default function HeroVentas() {
         desenvolverte mejor frente a otras personas?
       </motion.h2>
 
-      <motion.h1
-        className="hero__title"
+      <motion.h2
+        className="hero-ventas__title"
         initial={{ x: '-1em', opacity: 0 }}
         whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
       >
         Las habilidades sociales se puede desarrollar, descubre las técnicas que
         llevan perfeccionándose 115 años para disminuir el miedo al juicio ajeno
         y acciónalas en un entorno seguro y de confianza.
-      </motion.h1>
+      </motion.h2>
       <motion.div
         initial={{ opacity: 0, x: '-1rem' }}
         whileInView={{
@@ -38,18 +38,22 @@ export default function HeroVentas() {
           x: 0,
           transition: { duration: 1, delay: 0.2 },
         }}
-        className="hero__container"
+        className="hero-ventas__container"
       >
         <img
-          src="/logo-transparente.png"
+          src={logoSrc}
           alt="logo"
-          className="hero__logo"
+          className="hero-ventas__logo"
           width={1654}
           height={298}
         />
       </motion.div>
-      <p className="hero__credits">Fotografía: Carlos Alvar</p>
-      <p className="hero__credits">Dirección escénica: Julián Reyes Botello</p>
+      <div className="hero-ventas__credits-container">
+        <p className="hero-ventas__credits">Fotografía: Carlos Alvar</p>
+        <p className="hero-ventas__credits">
+          Dirección escénica: Julián Reyes Botello
+        </p>
+      </div>
     </section>
   );
 }

@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Loader from '../../../../components/loader/Loader';
-import './form.css';
 
 export default function Form({
   onSubmit,

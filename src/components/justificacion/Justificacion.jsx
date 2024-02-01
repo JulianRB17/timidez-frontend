@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './justificacion.css';
 
 export default function Justificacion() {
   return (

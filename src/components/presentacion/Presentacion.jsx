@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import './presentacion.css';
 
 export default function Presentacion() {
   return (

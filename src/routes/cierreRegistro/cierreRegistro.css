@@ -96,9 +96,6 @@
   width: 60%;
   cursor: pointer;
   text-align: center;
-}
-
-.cierre-registro__link {
   font-size: 1.5rem;
   color: #ffe3bc;
   text-decoration: none;
@@ -141,9 +138,6 @@
 
   .cierre-registro__btn {
     width: 100%;
-  }
-
-  .cierre-registro__link {
     font-size: 1rem;
   }
 

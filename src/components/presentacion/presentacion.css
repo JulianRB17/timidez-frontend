@@ -1,5 +1,5 @@
 .presentacion {
-  background-image: url(../../../public/heroFondoSm.webp);
+  background-image: url('../../assets/heroFondoSm.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

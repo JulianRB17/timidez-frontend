@@ -1,6 +1,6 @@
 import Garantia from '../../components/garantia/Garantia';
 import HeroVentas from '../../components/heroVentas/HeroVentas';
-import IntroVentas from '../../components/intro/Intro';
+import Intro from '../../components/intro/Intro';
 import Bio from '../../components/bio/Bio';
 import Justificacion from '../../components/justificacion/Justificacion';
 import Venta from '../../components/venta/Venta';
@@ -12,22 +12,22 @@ import CallToAction from '../../components/callToAction/CallToAction';
 import Footer from '../../components/footer/Footer';
 import Info from '../../components/info/Info';
 
-export default function VentasL() {
+export default function VentasL({ buyoutUrl }) {
   return (
     <section className="ventas-l">
       <HeroVentas />
-      <IntroVentas />
+      <Intro />
       <Justificacion />
       <Bio />
       <Venta />
       <Info />
-      <CallToActionSm />
+      <CallToActionSm buyoutUrl={buyoutUrl} />
       <Bonos />
       <Garantia />
-      <CallToActionSm />
-      <Precio />
+      <CallToActionSm buyoutUrl={buyoutUrl} />
+      <Precio buyoutUrl={buyoutUrl} />
       <Faqs />
-      <CallToAction />
+      <CallToAction buyoutUrl={buyoutUrl} />
       <Footer />
     </section>
   );

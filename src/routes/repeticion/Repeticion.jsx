@@ -1,9 +1,8 @@
 import { motion } from 'framer-motion';
 import Footer from '../../components/footer/Footer';
-import { Link } from 'react-router-dom';
-import './repeticion.css';
+import logoSrc from '../../assets/logo-transparente.png';
 
-export default function Repeticion() {
+export default function Repeticion({ buyoutUrl, repetitionUrl }) {
   return (
     <>
       <section className="repeticion">
@@ -40,7 +39,17 @@ export default function Repeticion() {
           </motion.h3>
         </div>
         <div className="repeticion__body">
-          <div className="repeticion__video-container"></div>
+          <iframe
+            width="720"
+            height="405"
+            src={repetitionUrl}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+            allowfullscreen
+            className="repeticion__video"
+          ></iframe>
+
           <div className="repeticion__venta">
             <motion.p
               className="repeticion__text"
@@ -55,13 +64,13 @@ export default function Repeticion() {
               ¿Quieres conocer algo más del programa:
             </motion.p>
             <img
-              src="/logo-transparente.png"
+              src={logoSrc}
               alt="logo"
               className="repeticion__logo"
               width={1654}
               height={298}
             />
-            <motion.button
+            <motion.a
               className="repeticion__btn"
               initial={{ opacity: 0.5 }}
               whileInView={{
@@ -70,11 +79,12 @@ export default function Repeticion() {
               }}
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.2 }}
+              rel="noopener noreferrer"
+              title="Adquiere ahora el programa"
+              href={buyoutUrl}
             >
-              <Link href="/ventas-l" className="repeticion__link">
-                Haz click aquí
-              </Link>
-            </motion.button>
+              Haz click aquí
+            </motion.a>
           </div>
         </div>
       </section>

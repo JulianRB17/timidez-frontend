@@ -12,12 +12,13 @@
   padding: 0.5em 2em;
   font-size: 2rem;
   border-radius: 0.5em;
-  color: #ffe3bc;
   box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
     #ffe3bc -1px 1px;
   width: fit-content;
   margin: 1rem 0 5rem;
   cursor: pointer;
+  color: #ffe3bc;
+  text-decoration: none;
 }
 
 .call-to-action-sm__logo {

@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 import Footer from '../../components/footer/Footer';
-import './cierreVenta.css';
+import logoSrc from '../../assets/logo-transparente.png';
 
-export default function CierreVenta() {
+export default function CierreVenta({ cursoDate, fbPermaUrl }) {
   return (
     <>
       <section className="cierre-venta">
@@ -28,7 +28,7 @@ export default function CierreVenta() {
             </span>
           </motion.h2>
           <img
-            src="/logo-transparente.png"
+            src={logoSrc}
             alt="logo"
             className="cierre-venta__logo"
             width={400}
@@ -62,8 +62,7 @@ export default function CierreVenta() {
                 Recuerda que las sesiones de este curso online serán los días
               </h2>
               <p className="cierre-venta__recordatorio-text cierre-venta__recordatorio-text_dates">
-                Lunes y miércoles de 18:00 a 20:00 hrs. (horario CDMX) del 8 de
-                enero al 20 de marzo
+                {cursoDate}
               </p>
 
               <p className="cierre-venta__recordatorio-text">
@@ -71,7 +70,7 @@ export default function CierreVenta() {
                 importante a través de un grupo privado de Facebook. Te dejo
                 aquí el link a éste.
               </p>
-              <motion.button
+              <motion.a
                 className="cierre-venta__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -80,9 +79,12 @@ export default function CierreVenta() {
                 }}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.2 }}
+                rel="noopener noreferrer"
+                title="Únete al grupo de facebook"
+                href={fbPermaUrl}
               >
                 Únete al grupo de Fb
-              </motion.button>
+              </motion.a>
               <p className="cierre-venta__recordatorio-text">
                 En éste podrás hacer preguntas en cualquier momento, a parte de
                 leer las dudas de otras personas y, finalmente es un espacio que

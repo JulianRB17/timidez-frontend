@@ -5,7 +5,7 @@
 }
 
 .faqs__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 0 auto;
   color: #ffe3bc;
@@ -37,6 +37,6 @@
 
 @media screen and (max-width: 700px) {
   .faqs__title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }

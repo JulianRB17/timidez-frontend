@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './info.css';
+import metodologiaSrc from '../../assets/metodologia.webp';
 
 export default function Info() {
   return (
@@ -34,7 +34,7 @@ export default function Info() {
           width={300}
           height={300}
           alt="metodología"
-          src="/metodologia.webp"
+          src={metodologiaSrc}
           className="info__img"
         />
         <motion.h3
@@ -210,7 +210,7 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">MÓDULO 1: ¿Qué es la timidez? </p>
+            <h3 className="info__subtitle">MÓDULO 1: ¿Qué es la timidez? </h3>
             <p className="info__text">
               Se aprenderá de manera teórica qué es la timidez, la diferencia
               con el ser introvertido porque sí: puede haber gente extrovertida
@@ -228,7 +228,7 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">MÓDULO 2: Reconocer mi voz</p>
+            <h3 className="info__subtitle">MÓDULO 2: Reconocer mi voz</h3>
             <p className="info__text">
               El mundo está constituido por una gran cantidad de personas
               tímidaz, sin embargo no está hecho para éstas. Durante este módulo
@@ -255,7 +255,7 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">MÓDULO 3: ¿De verdad actuar?</p>
+            <h3 className="info__subtitle">MÓDULO 3: ¿De verdad actuar?</h3>
             <p className="info__text">
               Ahora sí entraremos al mundo actoral. Aprenderás qué es la
               actuación y por qué ésta implica arrancarse máscaras sociales.
@@ -276,7 +276,7 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">MÓDULO 4: El mundo interno</p>
+            <h3 className="info__subtitle">MÓDULO 4: El mundo interno</h3>
             <p className="info__text">
               Como la ciencia se encarga de estudiar y entender la realidad, la
               psicología, parte de la filosofía y el arte se dedican a entender
@@ -299,9 +299,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 5: Descubriendo el personaje
-            </p>
+            </h3>
             <p className="info__text">
               Es muy difícil pensar en actuar y no pensar en personaje, ese ser
               que es y no la persona que lo encarna. ¿Cómo puedes ser otra
@@ -324,9 +324,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 6: Habla y escucha: voz y retroalimentación
-            </p>
+            </h3>
             <p className="info__text">
               La gente tímida muchas veces somos gente profundamente cruel con
               nosotras/os mismas/os. A lo largo de este módulo, por un lado
@@ -349,9 +349,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 7: Del texto al cuerpo, tus palabras
-            </p>
+            </h3>
             <p className="info__text">
               Hay veces en la vida en la que desearíamos que alguien nos dijera
               qué decir para salir bien de alguna situación. La cosa es que,
@@ -376,9 +376,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 8: Accionar, siempre accionar
-            </p>
+            </h3>
             <p className="info__text">
               ¿Te has dado cuenta cómo la gente que no es tímida acciona sin
               pensar mientras que la gente tímida piensa sin accionar? El paso
@@ -397,9 +397,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 9: Primer espacio de seguridad
-            </p>
+            </h3>
             <p className="info__text">
               Éste y los siguientes módulos implican llevar a la práctica todo
               lo aprendido previamente. Recuerda: accionar es lo más importante.
@@ -414,9 +414,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 10: Segundo espacio de seguridad
-            </p>
+            </h3>
             <p className="info__text">
               Éste y los siguientes módulos implican llevar a la práctica todo
               lo aprendido previamente. Recuerda: accionar es lo más importante.
@@ -431,9 +431,9 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <p className="info__subtitle">
+            <h3 className="info__subtitle">
               MÓDULO 11: Tercer espacio de seguridad
-            </p>
+            </h3>
             <p className="info__text">
               Éste y los siguientes módulos implican llevar a la práctica todo
               lo aprendido previamente. Recuerda: accionar es lo más importante.

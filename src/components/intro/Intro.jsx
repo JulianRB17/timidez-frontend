@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './intro.css';
+import piramideSrc from '../../assets/maslow.png';
 
 export default function IntroVentas() {
   return (
@@ -62,7 +62,7 @@ export default function IntroVentas() {
           </p>
 
           <img
-            src="/maslow.png"
+            src={piramideSrc}
             alt="Pirámide de Maslow"
             height={800}
             width={800}

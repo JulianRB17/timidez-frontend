@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import './callToAction.css';
+import logoSrc from '../../assets/logo-transparente.png';
 
-export default function CallToAction() {
+export default function CallToAction({ buyoutUrl }) {
   return (
     <section className="call-to-action">
       <div className="call-to-action__container">
@@ -40,13 +40,14 @@ export default function CallToAction() {
       </div>
       <div className="call-to-action__container">
         <img
-          src="/logo-transparente.png"
+          src={logoSrc}
           alt="logo"
           className="call-to-action__img"
           width={1654}
           height={298}
         />
-        <motion.button
+        <motion.a
+          href={buyoutUrl}
           className="call-to-action__btn"
           initial={{ opacity: 0.5 }}
           whileInView={{
@@ -55,9 +56,11 @@ export default function CallToAction() {
           }}
           whileTap={{ scale: 0.9 }}
           whileHover={{ scale: 1.2 }}
+          rel="noopener noreferrer"
+          title="Adquiere ahora el programa"
         >
           ADQUIRIR AHORA
-        </motion.button>
+        </motion.a>
         <div className="call-to-action__credits-container">
           <p className="call-to-action__credits">Fotografía: Carlos Alvar</p>
           <p className="call-to-action__credits">

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import './precio.css';
+import precioSrc from '../../assets/costo-final.png';
 
-export default function Precio() {
+export default function Precio({ buyoutUrl }) {
   return (
     <section className="precio">
       <motion.h2
@@ -75,7 +75,7 @@ export default function Precio() {
           height={200}
           width={400}
           alt="Precio final"
-          src="/costo-final.png"
+          src={precioSrc}
         />
       </motion.div>
       <p className="precio__text">
@@ -84,7 +84,8 @@ export default function Precio() {
         total de 571 USD
       </p>
       <p className="precio__text precio__text_accent">por sólo 197 USD</p>.
-      <motion.button
+      <motion.a
+        href={buyoutUrl}
         className="precio__btn"
         initial={{ opacity: 0.5 }}
         whileInView={{
@@ -95,7 +96,7 @@ export default function Precio() {
         whileHover={{ scale: 1.2 }}
       >
         ADQUIRIR AHORA
-      </motion.button>
+      </motion.a>
     </section>
   );
 }

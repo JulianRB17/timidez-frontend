@@ -1,32 +1,14 @@
-'use client';
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import Footer from '../../components/footer/Footer';
-import api from '../../utils/api';
-import { countdown } from '../../utils/countdown';
-import './cierreRegistro.css';
 
-export default function CierreRegistro() {
-  const [count, setCount] = useState('');
-  const [localDate, setLocalDate] = useState('');
-  const [timestamp, setTimestamp] = useState('');
-
-  useEffect(() => {
-    (async () => {
-      const data = await api.getDate();
-      if (data.localDate) {
-        setLocalDate(data.localDate);
-        setTimestamp(data.timestamp);
-      }
-    })();
-  }, []);
-
-  useEffect(() => {
-    if (timestamp) {
-      countdown(timestamp, setCount);
-    }
-  }, [timestamp, setCount]);
+export default function CierreRegistro({ localDate, count, urls }) {
+  const {
+    fbWebinarUrl,
+    whatsWebinarUrl,
+    encuestaWebinarUrl,
+    igUrl,
+    tikTokUrl,
+  } = urls;
 
   return (
     <>
@@ -89,7 +71,7 @@ export default function CierreRegistro() {
                 El curso se llevará a cabo en el siguiente grupo privado de
                 Facebook:
               </p>
-              <motion.button
+              <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -98,16 +80,17 @@ export default function CierreRegistro() {
                 }}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.2 }}
+                rel="noopener noreferrer"
+                title="Únete al grupo de facebook"
+                href={fbWebinarUrl}
               >
-                <Link href="#" className="cierre-registro__link">
-                  Únete al grupo de fb
-                </Link>
-              </motion.button>
+                Únete al grupo de fb
+              </motion.a>
               <p className="cierre-registro__recordatorio-text">
                 También te recomiendo unirte al siguiente grupo de Whatsapp
                 donde daremos info y recordatorios antes de la clase:
               </p>
-              <motion.button
+              <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -116,17 +99,18 @@ export default function CierreRegistro() {
                 }}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.2 }}
+                rel="noopener noreferrer"
+                title="Únete al grupo de whatsapp"
+                href={whatsWebinarUrl}
               >
-                <Link href="#" className="cierre-registro__link">
-                  Únete al grupo de whatsapp
-                </Link>
-              </motion.button>
+                Únete al grupo de whatsapp
+              </motion.a>
               <p className="cierre-registro__recordatorio-text">
                 Quiero que la información que te entregue sea la mejor posible y
                 la más útil para ti, por ello, te pido que me ayudes contestando
                 las siguientes 3 preguntas, te tomará menos de 5 min.
               </p>
-              <motion.button
+              <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -135,16 +119,17 @@ export default function CierreRegistro() {
                 }}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.2 }}
+                rel="noopener noreferrer"
+                title="Dale click para hacer la encuesta"
+                href={encuestaWebinarUrl}
               >
-                <Link href="#" className="cierre-registro__link">
-                  ¡Ayúdame respondiendo esta encuesta!
-                </Link>
-              </motion.button>
+                ¡Ayúdame respondiendo esta encuesta!
+              </motion.a>
               <p className="cierre-registro__recordatorio-text">
                 Finalmente, te comparto mis redes donde estoy subiendo contenido
                 gratuito
               </p>
-              <motion.button
+              <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -153,12 +138,13 @@ export default function CierreRegistro() {
                 }}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.2 }}
+                rel="noopener noreferrer"
+                title="Ve contenido gratuito que subo aquí"
+                href={igUrl}
               >
-                <Link href="#" className="cierre-registro__link">
-                  Instagram
-                </Link>
-              </motion.button>
-              <motion.button
+                Instagram
+              </motion.a>
+              <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -167,11 +153,12 @@ export default function CierreRegistro() {
                 }}
                 whileTap={{ scale: 0.9 }}
                 whileHover={{ scale: 1.2 }}
+                rel="noopener noreferrer"
+                title="Mira contenido gratuito que subo aquí"
+                href={tikTokUrl}
               >
-                <Link href="#" className="cierre-registro__link">
-                  Tiktok
-                </Link>
-              </motion.button>
+                Tiktok
+              </motion.a>
               <p className="cierre-registro__recordatorio-text cierre-registro__recordatorio-text_lg">
                 ¡Nos vemos muy pronto!
               </p>

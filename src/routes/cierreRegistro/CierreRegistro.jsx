@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import FooterWebinar from '../../components/footerWebinar/FooterWebinar';
+import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
 import api from '../../utils/api';
 import { countdown } from '../../utils/countdown';
 import './cierreRegistro.css';
@@ -185,7 +185,7 @@ export default function CierreRegistro() {
           </div>
         </div>
       </section>
-      <FooterWebinar />
+      <Footer />
     </>
   );
 }

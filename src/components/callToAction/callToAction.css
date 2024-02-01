@@ -1,6 +1,6 @@
 .call-to-action {
   display: flex;
-  background-image: url(../../../public/fondoForm.webp);
+  background-image: url('../../assets/fondoForm.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

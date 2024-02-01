@@ -12,7 +12,7 @@
       rgba(0, 8, 33, 1) 0%,
       rgba(7, 26, 85, 1) 50%
     ); */
-  background-image: url(../../../public/fondoBio.webp);
+  background-image: url('../../assets/fondoBio.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .cierre-venta__body {
-  background-image: url(../../../public/fondo.webp);
+  background-image: url('../../assets/fondo.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

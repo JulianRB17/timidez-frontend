@@ -1,5 +1,5 @@
 .hero__parallax {
-  background-image: url(../../../../../public/fondo-hero.webp);
+  background-image: url('../../../../assets/fondoForm.webp');
   min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 600px) {
   .hero__parallax {
-    background-image: url(../../../../../public/heroFondoSm.webp);
+    background-image: url('../../../../assets/heroFondoSm.webp');
   }
 
   .hero__hook {

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import './faq.css';
+// import './faq.css';
 
 export default function Faq({ answer, question }) {
   return (

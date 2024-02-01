@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../../../public/fondo-ventas.webp);
+  background-image: url('../../assets/fondo-ventas.webp');
   min-height: 100vh;
 
   background-attachment: fixed;

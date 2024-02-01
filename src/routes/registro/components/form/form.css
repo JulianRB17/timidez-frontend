@@ -1,5 +1,5 @@
 .form {
-  background-image: url(../../../../../public/fondoForm.webp);
+  background-image: url('../../../../assets/fondoForm.webp');
   height: 100%;
   background-attachment: fixed;
   background-position: center;

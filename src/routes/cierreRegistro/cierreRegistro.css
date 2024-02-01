@@ -37,7 +37,7 @@
 }
 
 .cierre-registro__body {
-  background-image: url(../../../public/fondo.webp);
+  background-image: url('../../assets/fondo.webp');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

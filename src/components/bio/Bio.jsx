@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import fondoImg from '../../assets/retratoPequeno.webp';
 import './bio.css';
 
 export default function Bio() {
@@ -107,7 +108,7 @@ export default function Bio() {
         </motion.p>
       </div>
       <img
-        src="/bio.webp"
+        src={fondoImg}
         alt="Julián Reyes Botello"
         height={1080}
         width={720}

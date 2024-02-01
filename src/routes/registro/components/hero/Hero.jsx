@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 // import { Barlow } from 'next/font/google';
 import api from '../../utils/api';
-import { countdown } from '../../utils/countdown';
+import { countdown } from '../../../../utils/countdown';
 import './hero.css';
 
 // const barlow = Barlow({ subsets: ['latin'], weight: '400' });

@@ -1,0 +1,36 @@
+.call-to-action-sm {
+  display: flex;
+  flex-direction: column;
+  background-color: #000821;
+  padding: 8%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.call-to-action-sm__btn {
+  background-color: #e17900;
+  padding: 0.5em 2em;
+  font-size: 2rem;
+  border-radius: 0.5em;
+  color: #ffe3bc;
+  box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
+    #ffe3bc -1px 1px;
+  width: fit-content;
+  margin: 1rem 0 5rem;
+  cursor: pointer;
+}
+
+.call-to-action-sm__logo {
+  height: auto;
+  width: 70%;
+}
+
+@media screen and (max-width: 600px) {
+  .call-to-action-sm__btn {
+    font-size: 1.5rem;
+    padding: 0.3em 1em;
+  }
+  .call-to-action-sm__logo {
+    width: 90%;
+  }
+}

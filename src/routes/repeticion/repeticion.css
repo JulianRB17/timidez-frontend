@@ -1,0 +1,99 @@
+.repeticion__header {
+  background: url(../../../public/fondoBio.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.repeticion__title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e17900;
+}
+
+.repeticion__subtitle {
+  font-size: 1.5rem;
+  color: #000821;
+}
+
+.repeticion__body {
+  background: linear-gradient(
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 8, 33, 1) 50%,
+    rgba(7, 26, 85, 1) 100%
+  );
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.repeticion__text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.repeticion__venta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.repeticion__logo {
+  width: 60%;
+  height: fit-content;
+  margin: 2em;
+}
+
+.repeticion__btn {
+  background-color: #e17900;
+  padding: 0.5em 2em;
+  border-radius: 0.5em;
+  box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
+    #ffe3bc -1px 1px;
+  cursor: pointer;
+  font-size: 1.5rem
+}
+
+.repeticion__link {
+  font-size: 1.5rem;
+  color: #ffe3bc;
+  text-decoration: none;
+}
+
+.repeticion__video-container {
+  height: 500px;
+  background-color: blue;
+}
+
+@media screen and (max-width: 400px) {
+  .repeticion__title {
+    font-size: 1.5rem;
+  }
+
+  .repeticion__subtitle {
+    font-size: 1rem;
+  }
+
+  .repeticion__text {
+    font-size: 1rem;
+  }
+
+  .repeticion__logo {
+    width: 80%;
+    margin: 2em 0;
+  }
+
+  .repeticion__link {
+    font-size: 1rem;
+  }
+
+  .repeticion__btn {
+    font-size: 1rem;
+  }
+}

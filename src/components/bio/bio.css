@@ -1,0 +1,76 @@
+.bio {
+  background-image: url('/fondoBio.webp');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: #000821;
+  display: flex;
+  position: relative;
+}
+
+.bio__text-container {
+  margin: 7%;
+}
+
+.bio__title {
+  font-size: 2rem;
+  margin: 2% auto 2%;
+}
+
+.bio__subtitle {
+  color: #071a55;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.bio__paragraph {
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.bio__text-accent {
+  font-size: 1.2rem;
+  color: #e17900;
+  font-weight: 700;
+}
+
+.bio__img {
+  position: sticky;
+  width: 35%;
+  height: 35%;
+  top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .bio {
+    flex-direction: column-reverse;
+  }
+
+  .bio__img {
+    position: relative;
+    width: 40%;
+    height: auto;
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bio__title {
+    font-size: 1.2rem;
+  }
+
+  .bio__subtitle {
+    font-size: 1rem;
+  }
+
+  .bio__paragraph {
+    font-size: 0.9rem;
+  }
+
+  .bio__text-accent {
+    font-size: 0.9rem;
+  }
+}

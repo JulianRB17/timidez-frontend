@@ -1,0 +1,114 @@
+.call-to-action {
+  display: flex;
+  background-image: url(../../../public/fondoForm.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  z-index: -2;
+}
+
+.call-to-action__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 40%;
+  align-items: center;
+  margin-left: 1em;
+  padding: 1% 2%;
+  position: relative;
+}
+
+.call-to-action__title {
+  font-size: 2rem;
+  color: #4c73f1;
+  font-weight: 500;
+  font-weight: 500;
+  text-align: center;
+}
+
+.call-to-action__element {
+  font-size: 1.2rem;
+}
+
+.call-to-action__text {
+  font-size: 2rem;
+  color: #ffe3bc;
+}
+
+.call-to-action__btn {
+  background-color: #e17900;
+  padding: 0.5em 2em;
+  font-size: 2.5rem;
+  border-radius: 0.5em;
+  color: #ffe3bc;
+  box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
+    #ffe3bc -1px 1px;
+  cursor: pointer;
+}
+
+.call-to-action__credits-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 0;
+  align-self: flex-end;
+  color: #ffe3bc;
+  position: absolute;
+  bottom: 0;
+}
+
+.call-to-action__credits {
+  margin: 0;
+}
+
+.call-to-action__img {
+  height: auto;
+  width: 90%;
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 900px) {
+  .call-to-action__btn {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .call-to-action {
+    flex-direction: column;
+  }
+
+  .call-to-action__container {
+    margin: 0;
+  }
+
+  .call-to-action__btn {
+    margin-bottom: 2em;
+  }
+
+  .call-to-action__credits {
+    font-size: 0.8rem;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .call-to-action__title {
+    font-size: 1.5rem;
+  }
+
+  .call-to-action__element {
+    font-size: 1rem;
+  }
+
+  .call-to-action__text {
+    font-size: 1.5rem;
+  }
+
+  .call-to-action__btn {
+    font-size: 1.5rem;
+    padding: 0.5em 1em;
+    margin-bottom: 4em;
+  }
+}

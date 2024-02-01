@@ -1,0 +1,69 @@
+.bonos {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  padding-top: 0;
+  border-bottom: 10px solid #e17900;
+  background-color: #ccc7e1;
+  color: #000821;
+}
+
+.bonos__title {
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 500;
+  position: relative;
+  top: -1.2em;
+  background-color: #ccc7e1;
+  border: #ffe3bc 2px solid;
+  padding: 0.7em;
+  text-align: center;
+}
+
+.bonos__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bonos__element {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+}
+
+.bonos__number {
+  font-size: 10rem;
+  margin: 0.1em;
+  color: #ccc7e1;
+  text-shadow: 0 0 0.1em #071a55;
+}
+
+.bonos__text {
+  font-size: 1.5rem;
+  margin: 0 0 2em 0;
+  text-align: center;
+}
+
+.bonos__text_general {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .bonos__title {
+    font-size: 1.5rem;
+  }
+
+  .bonos__text {
+    font-size: 1rem;
+  }
+
+  .bonos__container {
+    flex-direction: column;
+  }
+
+  .bonos__element {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

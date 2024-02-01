@@ -1,0 +1,155 @@
+.hero__parallax {
+  background-image: url(../../../../../public/fondo-hero.webp);
+  min-height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8%;
+  /* height: 93%; */
+}
+
+.hero__hook {
+  color: #ccc7e1;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1em auto;
+  text-align: center;
+  width: 80%;
+}
+
+.hero__hook_accent {
+  color: #ffe3bc;
+}
+
+.hero__title {
+  font-size: 2rem;
+  color: #e17900;
+  margin: 0;
+  margin-bottom: 1em;
+  width: 60%;
+  font-weight: 600;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  width: 55%;
+  font-weight: 400;
+  margin: 1em 0 1.5em 0;
+}
+
+.hero__btn-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__btn {
+  background-color: #e17900;
+  padding: 0.5em 2em;
+  font-size: 1.5rem;
+  border-radius: 0.5em;
+  color: #ffe3bc;
+  box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
+    #ffe3bc -1px 1px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.hero__credits-container {
+  position: absolute;
+  bottom: 5px;
+  align-self: flex-end;
+}
+
+.hero__credits {
+  margin: 0;
+  text-align: end;
+}
+
+.hero__text {
+  color: #ffe3bc;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.hero__date {
+  color: #ffe3bc;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1080px) {
+  .hero__hook {
+    font-size: 1rem;
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .hero__credits {
+    font-size: 1rem;
+  }
+
+  .hero__btn {
+    font-size: 1rem;
+  }
+
+  .hero__text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .hero__title {
+    font-size: 1.5rem;
+  }
+
+  .hero__credits {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__parallax {
+    background-image: url(../../../../../public/heroFondoSm.webp);
+  }
+
+  .hero__hook {
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
+  .hero__title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    width: 90%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .hero__container {
+    align-items: center;
+  }
+
+  .hero__credits {
+    display: none;
+  }
+}

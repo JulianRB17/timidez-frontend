@@ -1,0 +1,139 @@
+.precio {
+  padding: 5%;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  color: #ffe3bc;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 33, 1) 25%,
+    rgba(76, 115, 241, 1) 100%
+  );
+}
+
+.precio__title {
+  align-self: center;
+  margin: 0;
+  padding: 0.5em;
+  font-size: 2rem;
+  position: relative;
+  top: -1.2em;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 8, 33, 1) 25%,
+    rgba(76, 115, 241, 1) 100%
+  );
+  border: #e17900 2px solid;
+  font-weight: 500;
+  text-align: center;
+}
+
+.precio__text {
+  font-size: 1.5rem;
+  margin: 0;
+  text-shadow: #000821 1px 1px 0;
+  text-align: center;
+}
+
+.precio__text_accent {
+  font-size: 3rem;
+}
+
+.precio__tabla {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 3em;
+}
+
+.precio__nombre {
+  width: 80%;
+  border-right: 2px solid #ccc7e1;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.precio__numero {
+  padding: 0.5em 1em;
+  margin: 0;
+  width: 15%;
+  align-self: center;
+}
+
+.precio__element {
+  display: flex;
+  font-size: 1.3rem;
+  width: 100%;
+}
+
+.precio__img-container {
+  display: flex;
+  padding: 3em;
+}
+
+.precio__img {
+  width: 25%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.precio__numero_total {
+  border-top: 2px solid #ccc7e1;
+  padding-top: 1em;
+}
+
+.precio__nombre_total {
+  border-top: 2px solid #ccc7e1;
+  padding-top: 1em;
+}
+
+.precio__btn {
+  color: #ffe3bc;
+  background-color: #e17900;
+  font-size: 2.5rem;
+  text-decoration: none;
+  margin: 2em auto;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .precio__title {
+    font-size: 1.5rem;
+  }
+
+  .precio__text {
+    font-size: 1rem;
+  }
+
+  .precio__text_accent {
+    font-size: 2rem;
+  }
+
+  .precio__img {
+    width: 40%;
+  }
+
+  .precio__btn {
+    font-size: 1.5rem;
+  }
+
+  .precio__nombre {
+    font-size: 0.8rem;
+  }
+
+  .precio__numero {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .precio__img {
+    width: 80%;
+  }
+
+  .precio__img-container {
+    padding: 3em 0;
+  }
+}

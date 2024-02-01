@@ -1,0 +1,147 @@
+.form {
+  background-image: url(../../../../../public/fondoForm.webp);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3% 8% 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15% 25%;
+  box-shadow: #ffe3bc 0 0 1px;
+  position: relative;
+  border-radius: 5px;
+}
+
+.form__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  mix-blend-mode: soft-light;
+  background-color: #071a55;
+  border-radius: 5px;
+}
+
+.form__title {
+  color: #e17900;
+  margin: 1em auto;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form__label {
+  margin: 0.5em 0;
+  font-size: 1rem;
+}
+
+.form__input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  margin: 0 0 0.5em 0;
+  z-index: 1;
+}
+
+.form__input::placeholder {
+  font-size: 0.9em;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: #ffe3bc 0 0 10px;
+  color: #071a55;
+}
+
+.form__input:invalid {
+  box-shadow: red 0 0 10px;
+}
+
+.form__btn {
+  align-self: center;
+  background-color: #e17900;
+  padding: 0.5em 2em;
+  font-size: 1.3rem;
+  border-radius: 0.5em;
+  color: #ffe3bc;
+  box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
+    #ffe3bc -1px 1px;
+  cursor: pointer;
+  margin: 2em 0;
+  z-index: 1;
+  width: 80%;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+}
+
+.form__btn-inactive {
+  background-color: gray;
+}
+
+.form__credits {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.form__error-msg {
+  display: none;
+}
+
+.form__error-msg_active {
+  display: block;
+  color: red;
+  margin: 0.1em auto 0.3em 0;
+  text-shadow: #ffe3bc 0 0 1px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form__msg {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #ffe3bc;
+  font-weight: 700;
+}
+
+.form__msg_failed {
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .form__container {
+    margin: 15% 15%;
+  }
+
+  .form__title {
+    font-size: 1rem;
+  }
+
+  .form__label {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form__btn {
+    font-size: 0.75rem;
+  }
+  .form__credits {
+    font-size: 0.7rem;
+  }
+}

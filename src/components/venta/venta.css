@@ -1,0 +1,38 @@
+.venta {
+  padding: 5%;
+  background-color: #ffe3bc;
+  color: #071a55;
+  border-bottom: 10px solid #e17900;
+}
+
+.venta__title {
+  margin: 0;
+  color: #ffe3bc;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.venta__container {
+  margin: 2em 0;
+  /* border: 3px solid #000821; */
+  box-shadow: 1px 1px 5px #000821;
+  padding: 1em;
+  background-color: #071a55;
+  color: #ccc7e1;
+  border-radius: 5px;
+}
+
+.venta__text {
+  font-size: 1.2rem;
+  margin: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .venta__title {
+    font-size: 1.5rem;
+  }
+
+  .venta__text {
+    font-size: 0.9rem;
+  }
+}

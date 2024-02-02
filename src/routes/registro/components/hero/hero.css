@@ -1,5 +1,5 @@
 .hero__parallax {
-  background-image: url('../../../../assets/fondoForm.webp');
+  background-image: url('../../../../assets/fondo-registro.jpg');
   min-height: 100vh;
   width: 100%;
   background-attachment: fixed;
@@ -82,9 +82,29 @@
   text-align: center;
 }
 
+.hero__date-container {
+  position: relative;
+  margin-bottom: 2em;
+  padding: 0 1em;
+}
+
+.hero__date-overlay {
+  background-color: #000821;
+  mix-blend-mode: soft-light;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 15px;
+}
+
 .hero__date {
+  position: relative;
   color: #ffe3bc;
-  font-size: 1.3rem;
+  z-index: 2;
+  font-size: 1.5rem;
   text-align: center;
 }
 

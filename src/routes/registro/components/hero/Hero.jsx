@@ -1,46 +1,7 @@
-'use client';
-import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 // import { Barlow } from 'next/font/google';
-import api from '../../../../utils/api';
-import { countdown } from '../../../../utils/countdown';
 
-// const barlow = Barlow({ subsets: ['latin'], weight: '400' });
-
-export default function Hero() {
-  const [count, setCount] = useState('');
-  const [localDate, setLocalDate] = useState('');
-  const [timestamp, setTimestamp] = useState('');
-
-  useEffect(() => {
-    (async () => {
-      const data = await api.getDate();
-      if (data.localDate) {
-        setLocalDate(data.localDate);
-        setTimestamp(data.timestamp);
-      }
-    })();
-  }, []);
-
-  useEffect(() => {
-    if (timestamp) {
-      countdown(timestamp, setCount);
-    }
-  }, [timestamp, setCount]);
-
-  const Date = function () {
-    if (localDate) {
-      return (
-        <motion.div className="hero__date-container">
-          {/* <p className={`hero__date  ${barlow.className}`}>{localDate}</p> */}
-          <p className={`hero__date`}>{localDate}</p>
-          {/* <p className={`hero__date  ${barlow.className}`}> */}
-          <p className={`hero__date`}>{count ? count : '¡Ya iniciamos!'}</p>
-        </motion.div>
-      );
-    }
-  };
-
+export default function Hero({ localDate, count }) {
   return (
     <div className="hero__parallax">
       <div className="hero__container">
@@ -106,7 +67,13 @@ export default function Hero() {
             transition: { duration: 1 },
           }}
         >
-          <Date />
+          <motion.div className="hero__date-container">
+            <div className="hero__date-overlay" />
+            {/* <p className={`hero__date  ${barlow.className}`}>{localDate}</p> */}
+            <p className="hero__date">{localDate}</p>
+            {/* <p className={`hero__date  ${barlow.className}`}> */}
+            <p className="hero__date">{count ? count : '¡Ya iniciamos!'}</p>
+          </motion.div>
           <motion.a
             className="hero__btn"
             href="#form"

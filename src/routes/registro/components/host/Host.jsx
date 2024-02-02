@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import photoSrc from '../../../../assets/retratoPequeno.webp';
 
 const variants = {
   onView: { opacity: 1, y: 0 },
@@ -43,7 +44,7 @@ export default function Host() {
           <img
             className="host__image"
             alt="host"
-            src="/retratoPequeno.webp"
+            src={photoSrc}
             width={300}
             height={450}
           />

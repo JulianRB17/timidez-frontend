@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
 import { useEffect, useState } from 'react';
 import VentasL from './routes/ventasL/VentasL';
 import VentasS from './routes/ventasS/VentasS';
@@ -22,17 +21,20 @@ function App() {
   const [localDate, setLocalDate] = useState('');
   const [timestamp, setTimestamp] = useState('');
 
-  const webinarDate = 'Feb 3, 2024 21:50:00';
+  const webinarDate = 'Feb 1, 2024 21:50:00';
   const cursoDate =
     'Lunes y miércoles de 19:00 a 21:00 hrs. (horario CDMX) del 8 de enero al 20 de marzo';
 
   const urls = {
-    buyoutUrl: 'http://www.google.com',
-    fbPermaUrl: 'http://www.facebook.com',
+    // Cambios
     repetitionUrl:
       'https://www.youtube.com/embed/QFWUoH_LjJ0?si=-WOrZGxd2sW_jCuq',
     fbWebinarUrl: 'http://www.facebook.com',
     whatsWebinarUrl: 'http://www.whatsapp.com',
+
+    // Permas
+    buyoutUrl: 'http://www.google.com',
+    fbPermaUrl: 'http://www.facebook.com',
     encuestaWebinarUrl: 'http://www.google.com',
     igUrl: 'http://www.instagram.com',
     tikTokUrl: 'http://www.tiktok.com',
@@ -58,7 +60,7 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const data = { user: 'usuario', email: 'eva' };
+      const data = { user: formValues.username, email: formValues.email };
       // await api.postUser(formValues);
       // https://dev.to/saragibby/better-way-to-embed-active-campaign-forms-into-react-n9n
       if (!data.user) {

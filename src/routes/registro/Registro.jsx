@@ -14,10 +14,12 @@ export default function Registro({
   msgSuccess,
   setSentUser,
   formValues,
+  localDate,
+  count,
 }) {
   return (
     <section className="registro">
-      <Hero />
+      <Hero localDate={localDate} count={count} />
       <Host />
       <Secrets />
       <Bio />

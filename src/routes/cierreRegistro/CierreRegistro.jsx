@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Footer from '../../components/footer/Footer';
 
-export default function CierreRegistro({ localDate, count, urls }) {
+export default function CierreRegistro({ localDate, count, urls, hour }) {
   const {
     fbWebinarUrl,
     whatsWebinarUrl,
@@ -63,6 +63,9 @@ export default function CierreRegistro({ localDate, count, urls }) {
               </h2>
               <p className="cierre-registro__recordatorio-text cierre-registro__recordatorio-text_dates">
                 {localDate}
+              </p>
+              <p className="cierre-registro__recordatorio-text cierre-registro__recordatorio-text_dates">
+                {hour} hrs
               </p>
               <p className="cierre-registro__recordatorio-text cierre-registro__recordatorio-text_dates">
                 {count}

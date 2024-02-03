@@ -27,8 +27,7 @@ export default function Justificacion() {
             transition: { duration: 1 },
           }}
         >
-          No se puede actuar en soledad, sabes que invariablemente alguien te va
-          a ver.
+          No se puede actuar en soledad, actuar es un acto en comunión.
         </motion.li>
         <motion.li
           className="justificacion__list-element"
@@ -41,7 +40,7 @@ export default function Justificacion() {
           Actuar no es mentir: parte de mí sabe que estoy actuando, pero a la
           otra parte le están pasando de verdad esas cosas. Tener muchas
           experiencias en un espacio seguro es como usar rueditas en la
-          bicicleta.
+          bicicleta para luego salir a la vida con nuevas experiencias vividas.
         </motion.li>
         <motion.li
           className="justificacion__list-element"
@@ -65,7 +64,7 @@ export default function Justificacion() {
           La actuación brinda un espacio seguro donde podemos accionar. Pasa,
           por ejemplo en terapia, que descubres lo que necesitas cambiar en tu
           día a día, pero dar ese primer paso, esa primer acción da pánico allá
-          afuera.{' '}
+          afuera.
         </motion.li>
         <motion.li
           className="justificacion__list-element"
@@ -99,7 +98,8 @@ export default function Justificacion() {
           OJO: Reconciliandome con mi timidez: herramientas actorales para la
           vida diaria no es un proceso psicoterapéutico ni una alternativa a
           éste, más bien un complemento. De hecho, yo sugeriría llevar un
-          proceso psicoterapéutico a la par.{' '}
+          proceso psicoterapéutico a la par, como un complemento. Esta
+          metodología da cosas diferentes a estos procesos.
         </motion.p>
       </motion.ul>
     </section>

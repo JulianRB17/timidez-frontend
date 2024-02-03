@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 // import { Barlow } from 'next/font/google';
 
-export default function Hero({ localDate, count }) {
+export default function Hero({ localDate, hour, count }) {
   return (
     <div className="hero__parallax">
       <div className="hero__container">
@@ -71,6 +71,7 @@ export default function Hero({ localDate, count }) {
             <div className="hero__date-overlay" />
             {/* <p className={`hero__date  ${barlow.className}`}>{localDate}</p> */}
             <p className="hero__date">{localDate}</p>
+            <p className="hero__date">{hour} hrs</p>
             {/* <p className={`hero__date  ${barlow.className}`}> */}
             <p className="hero__date">{count ? count : '¡Ya iniciamos!'}</p>
           </motion.div>

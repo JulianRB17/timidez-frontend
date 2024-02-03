@@ -14,7 +14,7 @@ export default function CallToAction({ buyoutUrl }) {
         </motion.h2>
         <ul className="call-to-action__list">
           <li className="call-to-action__element">
-            Programa de 10 módulos: Reconciliándome con mi timidez, herramientas
+            Programa de 12 módulos: Reconciliándome con mi timidez, herramientas
             actorales para la vida diaria.
           </li>
           <li className="call-to-action__element">
@@ -35,7 +35,7 @@ export default function CallToAction({ buyoutUrl }) {
           initial={{ x: '-0.5rem' }}
           whileInView={{ x: 0, transition: { duration: 1 } }}
         >
-          Todo esto, con un valor total de 571 USD tan sólo por 197 USD
+          Todo esto, con un valor total de 611 USD tan sólo por 237 USD
         </motion.p>
       </div>
       <div className="call-to-action__container">

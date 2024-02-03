@@ -79,8 +79,8 @@ export default function IntroVentas() {
           }}
         >
           <p className="intro-ventas__text">
-            En pocas palabras, ésta muestra que para poder sentirte realizado en
-            algunas áreas de la vida necesitas antes desarrollar otras, por
+            En pocas palabras, ésta muestra que para poder sentirte realizada/o
+            en algunas áreas de la vida necesitas antes desarrollar otras, por
             ejemplo: no puedes pensar en triunfar profesionalmente si ni
             siquiera tienes qué comer ese día: tu atención estará en conseguir
             alimento.

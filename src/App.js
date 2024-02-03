@@ -19,6 +19,7 @@ function App() {
   const [sentUser, setSentUser] = useState(false);
   const [count, setCount] = useState('');
   const [localDate, setLocalDate] = useState('');
+  const [hour, setHour] = useState('');
   const [timestamp, setTimestamp] = useState('');
 
   const webinarDate = 'Feb 1, 2024 21:50:00';
@@ -41,10 +42,13 @@ function App() {
   };
 
   useEffect(() => {
+    const webinarHour = new Date(webinarDate).getHours();
+    const webinarMinutes = new Date(webinarDate).getSeconds();
     setLocalDate(new Date(webinarDate).toLocaleDateString('es-ES'));
     setTimestamp(new Date(webinarDate).getTime());
+    setHour(`${webinarHour}:${webinarMinutes ? 0 : '00'}`);
     countdown(timestamp, setCount);
-  }, [timestamp]);
+  }, [timestamp, hour]);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -95,7 +99,12 @@ function App() {
         <Route
           path="/cierre-r"
           element={
-            <CierreRegistro localDate={localDate} count={count} urls={urls} />
+            <CierreRegistro
+              localDate={localDate}
+              hour={hour}
+              count={count}
+              urls={urls}
+            />
           }
         />
         <Route
@@ -117,18 +126,14 @@ function App() {
               setSentUser={setSentUser}
               formValues={formValues}
               localDate={localDate}
+              hour={hour}
               count={count}
             />
           }
         />
         <Route
           path="/repeticion"
-          element={
-            <Repeticion
-              buyoutUrl={urls.buyoutUrl}
-              repetitionUrl={urls.repetitionUrl}
-            />
-          }
+          element={<Repeticion repetitionUrl={urls.repetitionUrl} />}
         />
       </Routes>
     </div>

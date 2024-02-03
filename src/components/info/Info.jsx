@@ -17,10 +17,13 @@ export default function Info() {
           initial={{ opacity: 0.5, x: '-0.5rem' }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
         >
-          Reconciliandome con mi timidez: herramientas actorales para la vida
-          diaria ayuda a personas tímidas a desarrollar su inteligencia
-          interpersonal para no sentirse solas a través de herramientas
-          actorales aunque nunca hayan actuado.
+          <span className="info__text_accent info__text">
+            Reconciliandome con mi timidez: herramientas actorales para la vida
+            diaria
+          </span>{' '}
+          ayuda a personas tímidas a desarrollar su inteligencia interpersonal e
+          interpersonal para no sentirse solas ofreciendo herramientas actorales
+          que puedan usar aunque nunca hayan actuado.
         </motion.p>
 
         <motion.p
@@ -57,7 +60,7 @@ export default function Info() {
           experiencias en una realidad protegida, acolchonada. Es una especie de
           laboratorio de la vida humana, donde no importa si te equivocas porque
           no hay consecuencias reales, lo puedes volver a intentar exactamente
-          igual pero mejor. Así que, éste es un espacio donde vivirás
+          igual pero mejor. Así que éste es un espacio donde vivirás
           experiencias nuevas pero de manera muy protegida.
         </motion.p>
         <motion.h3
@@ -97,21 +100,40 @@ export default function Info() {
         >
           Es muy común que si alguien nos dice: “oye, te puedo dar una crítica
           constructiva” hacen de todo menos la parte constructiva de la crítica.
-          Así es el mundo afuera, no podemos hacer nada para transformarlo. Lo
-          que sí podemos hacer es aprender a recibir elementos del mundo de
-          afuera y filtrarlos para recibir de mejor manera lo que necesitamos.
-          Actrices y actores somos gente experta en ser rechazada, sobre todo
-          hablando de cine y tele. Hacemos una cantidad brutal de castings, nos
-          exponemos muchísimo para que nos digan: “nosotros te llamamos”, somos
-          profesionales del rechazo. Una de las mejores estrategias que como
-          actor he aprendido es esa: responsabilizarme de con qué me quedo y con
-          qué no, saber que muchas veces no quedé en el papel no por ser mal
-          actor sino porque era un poco más chaparro o alto de lo que
-          necesitaban en el proyecto, por decir algún ejemplo bobo. Sobre todo
-          para la gente tímida es fundamental aprender a recibir las palabras
-          ajenas, porque muchas veces somos gente muy sensible y es fácil que
-          algo nos lastime y no lo decimos, porque somos gente tímida. Aprender
-          a escuchar es fundamental.
+          Así es el mundo afuera, no podemos hacer nada para cambiar a otras
+          personas. Lo que sí podemos hacer es aprender a recibir elementos del
+          mundo de afuera y filtrarlos para recibir de mejor manera lo que
+          necesitamos. Actrices y actores somos gente experta en ser rechazada,
+          sobre todo hablando de cine y tele. Hacemos una cantidad brutal de
+          castings, nos exponemos muchísimo para que nos digan: “nosotros te
+          llamamos”, "no eres tan guapa/o", "espero que no suene feo pero
+          buscabamos a alguien de piel más clara", "es que mira a los demás y
+          mírate a un espejo, es importante conocer tu perfil" estos son
+          comentarios reales que he recibido, algunos más de una vez, somos
+          profesionales del rechazo.
+        </motion.p>
+        <motion.p
+          className="info__text"
+          initial={{ opacity: 0.5, x: '-0.5rem' }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+        >
+          Una de las mejores estrategias que como actor he aprendido es
+          responsabilizarme de con qué me quedo y con qué no de lo que me dicen,
+          saber que muchas veces no quedé en el papel no por ser mal actor sino
+          porque era un poco más chaparro o alto de lo que necesitaban en el
+          proyecto, por decir algún ejemplo bobo. Aprender a no tomarme
+          personalmente todos los comentarios que dan sobre mi persona es muy
+          necesario, sino no podría seguir en el medio.
+        </motion.p>
+        <motion.p
+          className="info__text"
+          initial={{ opacity: 0.5, x: '-0.5rem' }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
+        >
+          Para la gente tímida nos es fundamental aprender a recibir las
+          palabras ajenas, porque muchas veces somos gente muy sensible y es
+          fácil que algo nos lastime y no lo decimos justo porque somos gente
+          tímida. Por ello aprender a escuchar es fundamental.
         </motion.p>
         <motion.h3
           className="info__subtitle"
@@ -133,8 +155,8 @@ export default function Info() {
           pregunta en público aunque tiene una respuesta brillante? Si has
           llegado hasta aquí, muy probablemente te ha pasado. Este cuarto eje
           está concentrado en aprender la valía de mis palabras y poder, incluso
-          con mi timidez, darme a escuchar allá afuera, porque lo que tengo que
-          decir es muy importante.
+          con mi timidez, darme a escuchar allá afuera, porque sí: lo que tengo
+          que decir es muy importante.
         </motion.p>
         <motion.h3
           className="info__subtitle"
@@ -149,20 +171,25 @@ export default function Info() {
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
         >
           Finalmente, a todo esto lo rodea la “compañía”. Me gusta muchísimo esa
-          palabra porque el significado de su etimología es: aquellas personas
-          que comparten el pan. Más allá de lo mucho que me gusta el pan, pienso
-          que no hay acto de comunión más bello que compartir un alimento. La
-          base de nuestra vida. Con compañía me refiero a las personas que
-          forman parte de la comunidad de Reconciliandome con mi timidez:
-          herramientas actorales para la vida diaria, desde yo mismo hasta otras
-          personas con las que compartirás estas sesiones, gente que ya ha
-          pasado por aquí y la gente que pasará. Durante un proceso escénico en
-          el que estaba, nuestro director, lamentablemente perdió a su madre.
-          Fue un momento muy difícil para él, y un día, con el corazón en las
-          manos y lágrimas en los ojos nos dijo: “Hoy confirmo que el teatro
-          crea familias”. No sé qué lo llevó a decir eso, pero sé que a más de
-          una persona actuar nos ha salvado la vida por el compartir con la
-          gente que encontramos. Ahora, sé que decidir dar el paso de
+          palabra porque su etimología viene de: aquellas personas que comparten
+          el pan. Más allá de lo mucho que me gusta el pan, pienso que no hay
+          acto de comunión más bello que compartir un alimento. La base de
+          nuestra vida. Con compañía me refiero a las personas que forman parte
+          de la comunidad de
+          <span className="info__text info__text_accent">
+            Reconciliandome con mi timidez: herramientas actorales para la vida
+            diaria
+          </span>
+          , desde yo mismo hasta otras personas con las que compartirás estas
+          sesiones, gente que ya ha pasado por aquí y la gente que pasará.
+          Durante un proceso escénico en el que estaba, nuestro director,
+          lamentablemente perdió a su madre. Fue un momento muy difícil para él,
+          y un día, con el corazón en las manos y lágrimas en los ojos nos dijo:
+          <span className="info__text info__text_accent">
+            “Hoy confirmo que el teatro crea familias”
+          </span>
+          . Sé que a más de una persona actuar nos ha salvado la vida por el
+          compartir con la gente que encontramos. Ahora, decidir dar el paso de
           encontrarte con tu timidez no es uno sencillo, no es algo que todo el
           mundo entienda, pero aquí te entendemos y te abrazamos con lo complejo
           que puede ser para ti. Hagamos compañía, compartamos un pan.
@@ -179,7 +206,7 @@ export default function Info() {
           initial={{ opacity: 0.5, x: '-0.5rem' }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
         >
-          El curso está dividido en 11 sesiones. En las primeras tenderemos más
+          El curso está dividido en 12 sesiones. En las primeras tenderemos más
           a trabajar sobre qué es la timidez, cómo nos afecta, etc. Después
           jugaremos un poco con la actuación y, finalmente, después de un
           proceso bien desarrollado, cuidado y articulado, cada quién tendrá la
@@ -187,7 +214,9 @@ export default function Info() {
           sé que da miedo, pero sepamos que no se nos va a juzgar por ello y,
           más bien, será la forma en la que llevaremos a la práctica todo lo que
           se ha trabajado. Porque sí: es un curso teórico/práctico. RECUERDA:
-          ACCIONAR ES FUNDAMENTAL.
+          <span className="info__tex info__text_accent">
+            ACCIONAR ES FUNDAMENTAL.
+          </span>
         </motion.p>
         <motion.h3
           className="info__title"
@@ -201,8 +230,8 @@ export default function Info() {
           initial={{ opacity: 0.5, x: '-0.5rem' }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
         >
-          El programa está dividido en 11 módulos que se revisarán a lo largo de
-          11 semana:
+          El programa está dividido en 12 módulos que se revisarán a lo largo de
+          6 semana:
         </motion.p>
         <motion.ul className="info__list">
           <motion.div
@@ -213,9 +242,9 @@ export default function Info() {
             <h3 className="info__subtitle">MÓDULO 1: ¿Qué es la timidez? </h3>
             <p className="info__text">
               Se aprenderá de manera teórica qué es la timidez, la diferencia
-              con el ser introvertido porque sí: puede haber gente extrovertida
-              y tímida (yo, por ejemplo). También el porque ésta nos paraliza y
-              a veces domina. Aprenderás cómo le hacemos actores y actrices para
+              con el ser introvertido: puede haber gente extrovertida y tímida
+              (yo, por ejemplo). También el porque ésta nos paraliza y a veces
+              domina. Aprenderás cómo le hacemos actores y actrices para
               enfrentarnos al pánico escénico.
             </p>
             <p className="info__text">
@@ -304,11 +333,13 @@ export default function Info() {
             </h3>
             <p className="info__text">
               Es muy difícil pensar en actuar y no pensar en personaje, ese ser
-              que es y no la persona que lo encarna. ¿Cómo puedes ser otra
-              persona siendo tú? En este módulo entenderás cómo se puede
-              construir un personaje, la diferencia entre personajes simples y
-              complejos, el por qué algunos personajes hacen que nos
-              encariñemos.
+              y no la persona que lo encarna. ¿Cómo puedes ser otra persona
+              siendo tú? En este módulo entenderás cómo se puede construir un
+              personaje, la diferencia entre personajes simples y complejos, el
+              por qué algunos personajes hacen que nos encariñemos. También como
+              la ficción -esa otra realidad donde vive el personaje- nos
+              protege: accionarás pero no desde ti entonces no hay ningún
+              problema.
             </p>
             <p className="info__text">
               Empezaremos con un juego donde estarás protegida/o por las
@@ -398,49 +429,15 @@ export default function Info() {
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
             <h3 className="info__subtitle">
-              MÓDULO 9: Primer espacio de seguridad
+              MÓDULO 9 a 12: Espacios de seguridad
             </h3>
             <p className="info__text">
-              Éste y los siguientes módulos implican llevar a la práctica todo
-              lo aprendido previamente. Recuerda: accionar es lo más importante.
-              También me es necesario volver a mencionar el espacio de seguridad
-              que se construye para que la acción y tú como persona sean
-              protegidas. Es un espacio donde se generarán experiencias únicas y
-              entenderás en la piel la belleza de encarnar a un otro ser.
-            </p>
-          </motion.div>
-          <motion.div
-            className="info__element"
-            initial={{ y: '0.5rem' }}
-            whileInView={{ y: 0, transition: { duration: 1 } }}
-          >
-            <h3 className="info__subtitle">
-              MÓDULO 10: Segundo espacio de seguridad
-            </h3>
-            <p className="info__text">
-              Éste y los siguientes módulos implican llevar a la práctica todo
-              lo aprendido previamente. Recuerda: accionar es lo más importante.
-              También me es necesario volver a mencionar el espacio de seguridad
-              que se construye para que la acción y tú como persona sean
-              protegidas. Es un espacio donde se generarán experiencias únicas y
-              entenderás en la piel la belleza de encarnar a un otro ser.
-            </p>
-          </motion.div>
-          <motion.div
-            className="info__element"
-            initial={{ y: '0.5rem' }}
-            whileInView={{ y: 0, transition: { duration: 1 } }}
-          >
-            <h3 className="info__subtitle">
-              MÓDULO 11: Tercer espacio de seguridad
-            </h3>
-            <p className="info__text">
-              Éste y los siguientes módulos implican llevar a la práctica todo
-              lo aprendido previamente. Recuerda: accionar es lo más importante.
-              También me es necesario volver a mencionar el espacio de seguridad
-              que se construye para que la acción y tú como persona sean
-              protegidas. Es un espacio donde se generarán experiencias únicas y
-              entenderás en la piel la belleza de encarnar a un otro ser.
+              Estos módulos implican llevar a la práctica todo lo aprendido
+              previamente. Recuerda: accionar es lo más importante. También me
+              es necesario volver a mencionar el espacio de seguridad que se
+              construye para que la acción y tú como persona sean protegidas. Es
+              un espacio donde se generarán experiencias únicas y entenderás en
+              la piel la belleza de encarnar a un otro ser.
             </p>
           </motion.div>
         </motion.ul>

@@ -35,8 +35,8 @@ export default function Bio() {
             la UNAM{' '}
           </span>
           aunque estudié un tiempo la Licenciatura en Actuación de Casa del
-          Teatro, fue la necesidad de dirigir la que me llevó a la UNAM. Tengo
-          un{' '}
+          Teatro, fue la necesidad de dirigir la que me llevó a la UNAM. También
+          tengo un{' '}
           <span className="bio__text-accent">
             Diplomado en Dirección Escénica{' '}
           </span>{' '}
@@ -49,13 +49,22 @@ export default function Bio() {
           intercambio académico, en la Universidad Nacional de Córdoba,
           Argentina, en la Licenciatura de Teatro. Esas son mis credenciales
           académicas, llevo haciendo teatro de manera profesional desde 2012, he
-          dirigido, producido y actuado en muchas obras. También he actuado en
-          cine aunque no me enoque tanto en ese medio. Actualmente tengo en
-          temporada una obra de ciencia ficción que produje junto a mi compañía
-          MoS y de la cual también soy el director escénico. Así que tengo, a
-          parte del conocimiento académico, una trayectoria importante en la
-          escena mexicana. Pero eso creo que no es lo más importante.
+          dirigido, producido o actuado en más de 15 obras. También he actuado
+          en cine aunque no me enfoqué tanto en ese medio.
         </motion.p>
+
+        <motion.p
+          className="bio__paragraph"
+          initial={{ x: '-0.5rem' }}
+          whileInView={{ x: 0, transition: { duration: 1 } }}
+        >
+          Actualmente tengo en temporada una obra de ciencia ficción que produje
+          junto a mi compañía MoS y de la cual también soy el director escénico.
+          Así que tengo, a parte del conocimiento académico, una trayectoria
+          importante en la escena mexicana. Pero eso creo que no es lo más
+          importante.
+        </motion.p>
+
         <motion.h3
           className="bio__subtitle"
           initial={{ x: '0.5rem' }}
@@ -79,7 +88,7 @@ export default function Bio() {
           </span>
           . Muchas cosas, un amor imposible incluido, me llevaron a enamorarme
           del teatro: el espacio donde podía vivir una realidad muy diferente a
-          la mía que odiaba. Tomé esa decisión hace 14 años.{' '}
+          la mía que odiaba. Tomé esa decisión hace 15 años.{' '}
           <span className="bio__text-accent">
             HOY MI VIDA ES TOTALMENTE DIFERENTE.
           </span>
@@ -95,15 +104,17 @@ export default function Bio() {
           whileInView={{ x: 0, transition: { duration: 1 } }}
         >
           Sabiendo que la razón por la que actrices y actores somos gente que
-          puede dialogar con nuestra timidez por la profesión que tenemos, por
-          las herramientas que se nos otorgan y las experiencias que vivimos, y
-          sabiendo que si yo no me hubiera enamorado de la teatralidad mi vida
-          seguramente estaría regida por mi timidez, decidí crear este curso
+          puede dialogar con nuestra timidez es por la profesión que tenemos,
+          por las herramientas que se nos otorgan y las experiencias que
+          vivimos, y sabiendo que si yo no me hubiera enamorado de la
+          teatralidad mi vida seguramente estaría regida por mi timidez, decidí
+          crear este curso
           <span className="bio__text-accent">
             {' '}
             para ayudar a otras personas como yo que no tienen idea de las
-            posibilidades reales que tienen para dialogar con su timidez.{' '}
+            posibilidades reales que tienen para dialogar con su timidez{' '}
           </span>
+          a adquirir estas herramientas que yo tengo por mi profesión.
         </motion.p>
       </div>
       <img

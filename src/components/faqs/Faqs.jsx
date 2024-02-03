@@ -47,7 +47,7 @@ export default function Faqs() {
       question:
         '¿Cómo se abordarán los aspectos psicológicos y emocionales de la timidez?',
       answer:
-        'Lo primero, y fundamental es que esto NO es un proceso terapéutico, más bien puede ser un proceso alterno a la terapia psicológica. Lo segundo es que no planteamos la idea de eliminar la timidez o pensar que ésta es mala, es una parte del carácter de una gran parte de la población. Más bien aprendemos a que ésta deje de ser quien tome las riendas de nuestra vida.',
+        'Lo primero, y fundamental es que esto NO es un proceso terapéutico, más bien puede ser un proceso complementario a la terapia psicológica. Lo segundo es que no planteamos la idea de eliminar la timidez o pensar que ésta es mala, es una parte del carácter de una gran parte de la población. Más bien aprendemos a que ésta deje de ser quien tome las riendas de nuestra vida.',
     },
     {
       question:

@@ -15,11 +15,12 @@ export default function Registro({
   setSentUser,
   formValues,
   localDate,
+  hour,
   count,
 }) {
   return (
     <section className="registro">
-      <Hero localDate={localDate} count={count} />
+      <Hero localDate={localDate} count={count} hour={hour} />
       <Host />
       <Secrets />
       <Bio />

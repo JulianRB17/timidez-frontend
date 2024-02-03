@@ -32,6 +32,10 @@
   margin: 0;
 }
 
+.info__text_accent {
+  color: #e17900;
+}
+
 .info__subtitle {
   font-size: 2rem;
   color: #4c73f1;

@@ -23,12 +23,12 @@
 @import url('./components/loader/loader.css');
 @import url('./components/precio/precio.css');
 @import url('./components/presentacion/presentacion.css');
-@import url('./components/secrets/secrets.css');
 @import url('./components/venta/venta.css');
 
 @import url('./routes/cierreRegistro/cierreRegistro.css');
 @import url('./routes/cierreVenta/cierreVenta.css');
 @import url('./routes/registro/registro.css');
+@import url('./routes/registro/components/secrets/secrets.css');
 @import url('./routes/registro/components/form/form.css');
 @import url('./routes/registro/components/hero/hero.css');
 @import url('./routes/registro/components/host/host.css');

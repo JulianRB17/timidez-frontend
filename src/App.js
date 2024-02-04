@@ -95,7 +95,7 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<VentasL buyoutUrl={urls.buyoutUrl} />} />
-        <Route path="/ventas-s" element={<VentasS />} />
+        <Route path="/programa-s" element={<VentasS />} />
         <Route
           path="/cierre-r"
           element={
@@ -108,7 +108,7 @@ function App() {
           }
         />
         <Route
-          path="/cierre-v"
+          path="/programa-v"
           element={
             <CierreVenta cursoDate={cursoDate} fbPermaUrl={urls.fbPermaUrl} />
           }

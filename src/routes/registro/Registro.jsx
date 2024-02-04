@@ -1,4 +1,3 @@
-import './registro.css';
 import Host from './components/host/Host';
 import Hero from './components/hero/Hero';
 import Secrets from './components/secrets/Secrets';

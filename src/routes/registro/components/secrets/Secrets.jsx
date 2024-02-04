@@ -22,8 +22,8 @@ export default function Secrets() {
             1
           </motion.h2>
           <div className="secrets__text">
-            Existen actores y actrices tímidas, no nacemos siendo el centro de
-            atención.
+            Existen actores o actrices tímidas, no somos gente que nace siendo
+            el centro de atención, entonces ¿Cómo le hacemos?
           </div>
         </div>
         <div className="secrets__element">

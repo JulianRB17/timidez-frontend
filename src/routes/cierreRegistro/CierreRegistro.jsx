@@ -29,8 +29,8 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
             ¡Listo! En este momento te debe estar llgando un mail que confirma
             tu registro a esta clase gratuita:{' '}
             <span className="cierre-registro__title_accent">
-              3 secretos de actrices y actores para hablar en público y no morir
-              de vergüenza en el intento (aunque nunca hayas actuado)
+              3 secretos de actrices y actores para socializar y no morir de
+              vergüenza en el intento (aunque nunca hayas actuado)
             </span>
           </motion.h2>
 

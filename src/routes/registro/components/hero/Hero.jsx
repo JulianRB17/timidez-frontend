@@ -35,7 +35,7 @@ export default function Hero({ localDate, hour, count }) {
             transition: { duration: 1 },
           }}
         >
-          3 secretos de actrices y actores para hablar en público y no morir de
+          3 secretos de actrices y actores para socializar y no morir de
           vergüenza en el intento (aunque nunca hayas actuado)
         </motion.h1>
 

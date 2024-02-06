@@ -22,19 +22,18 @@ function App() {
   const [hour, setHour] = useState('');
   const [timestamp, setTimestamp] = useState('');
 
-  const webinarDate = 'Feb 1, 2024 21:50:00';
+  const webinarDate = 'Feb 13, 2024 20:00:00';
   const cursoDate =
-    'Lunes y miércoles de 19:00 a 21:00 hrs. (horario CDMX) del 8 de enero al 20 de marzo';
+    'Lunes y miércoles de 19:00 a 21:00 hrs. (horario CDMX) del 4 de marzo al 17 de abril (sin sesiones en Semana Santa)';
 
   const urls = {
     // Cambios
-    repetitionUrl:
-      'https://www.youtube.com/embed/QFWUoH_LjJ0?si=-WOrZGxd2sW_jCuq',
+    repetitionUrl: 'https://www.youtube.com/embed/',
     fbWebinarUrl: 'http://www.facebook.com',
     whatsWebinarUrl: 'http://www.whatsapp.com',
 
     // Permas
-    buyoutUrl: 'http://www.google.com',
+    buyoutUrl: 'https://pay.hotmart.com/Q90647461B?checkoutMode=10',
     fbPermaUrl: 'http://www.facebook.com',
     encuestaWebinarUrl: 'http://www.google.com',
     igUrl: 'http://www.instagram.com',
@@ -108,7 +107,7 @@ function App() {
           }
         />
         <Route
-          path="/programa-v"
+          path="/cierre-v"
           element={
             <CierreVenta cursoDate={cursoDate} fbPermaUrl={urls.fbPermaUrl} />
           }

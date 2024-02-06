@@ -230,7 +230,7 @@ export default function Info() {
           initial={{ opacity: 0.5, x: '-0.5rem' }}
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
         >
-          El programa está dividido en 12 módulos que se revisarán a lo largo de
+          El programa está dividido en 9 módulos que se revisarán a lo largo de
           6 semana:
         </motion.p>
         <motion.ul className="info__list">
@@ -242,9 +242,9 @@ export default function Info() {
             <h3 className="info__subtitle">MÓDULO 1: ¿Qué es la timidez? </h3>
             <p className="info__text">
               Se aprenderá de manera teórica qué es la timidez, la diferencia
-              con el ser introvertido: puede haber gente extrovertida y tímida
-              (yo, por ejemplo). También el porque ésta nos paraliza y a veces
-              domina. Aprenderás cómo le hacemos actores y actrices para
+              con el ser una perona introvertida: puede haber gente extrovertida
+              y tímida (yo, por ejemplo). También el porque ésta nos paraliza y
+              a veces domina. Aprenderás cómo le hacemos actores y actrices para
               enfrentarnos al pánico escénico.
             </p>
             <p className="info__text">
@@ -260,7 +260,7 @@ export default function Info() {
             <h3 className="info__subtitle">MÓDULO 2: Reconocer mi voz</h3>
             <p className="info__text">
               El mundo está constituido por una gran cantidad de personas
-              tímidaz, sin embargo no está hecho para éstas. Durante este módulo
+              tímidas, sin embargo no está hecho para éstas. Durante este módulo
               aprenderás cómo darle lugar a tu voz en un mundo que está
               estructurado para acallarla.
             </p>
@@ -332,14 +332,14 @@ export default function Info() {
               MÓDULO 5: Descubriendo el personaje
             </h3>
             <p className="info__text">
-              Es muy difícil pensar en actuar y no pensar en personaje, ese ser
-              y no la persona que lo encarna. ¿Cómo puedes ser otra persona
-              siendo tú? En este módulo entenderás cómo se puede construir un
-              personaje, la diferencia entre personajes simples y complejos, el
-              por qué algunos personajes hacen que nos encariñemos. También como
-              la ficción -esa otra realidad donde vive el personaje- nos
-              protege: accionarás pero no desde ti entonces no hay ningún
-              problema.
+              Es muy difícil pensar en actuar y no pensar en el concepto de
+              personaje, ese ser y no la persona que lo encarna. ¿Cómo puedes
+              ser otra persona siendo tú? En este módulo entenderás cómo se
+              puede construir un personaje, la diferencia entre personajes
+              simples y complejos, el porque algunos personajes hacen que nos
+              encariñemos. También como la ficción -esa otra realidad donde vive
+              el personaje- nos protege: accionarás pero no desde ti entonces no
+              hay ningún problema.
             </p>
             <p className="info__text">
               Empezaremos con un juego donde estarás protegida/o por las
@@ -428,9 +428,7 @@ export default function Info() {
             initial={{ y: '0.5rem' }}
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
-            <h3 className="info__subtitle">
-              MÓDULO 9 a 12: Espacios de seguridad
-            </h3>
+            <h3 className="info__subtitle">MÓDULO 9: Espacios de seguridad</h3>
             <p className="info__text">
               Estos módulos implican llevar a la práctica todo lo aprendido
               previamente. Recuerda: accionar es lo más importante. También me

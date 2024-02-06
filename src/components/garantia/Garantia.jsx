@@ -21,8 +21,8 @@ export default function Garantia() {
           Tenemos una{' '}
           <span className="garantia__text_accent">GARANTÍA TOTAL</span> gracias
           a la cual se te regresará íntegra tu inversión total si es que durante
-          las primeras dos semanas has tomado las sesiones y no estás
-          completamente satisfecha/o.
+          las primer semana has tomado las sesiones y no estás completamente
+          satisfecha/o.
         </motion.p>
         <img
           src={garantiaSrc}

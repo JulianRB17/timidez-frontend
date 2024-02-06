@@ -14,7 +14,7 @@ export default function CallToAction({ buyoutUrl }) {
         </motion.h2>
         <ul className="call-to-action__list">
           <li className="call-to-action__element">
-            Programa de 12 módulos: Reconciliándome con mi timidez, herramientas
+            Programa de 9 módulos: Reconciliándome con mi timidez, herramientas
             actorales para la vida diaria.
           </li>
           <li className="call-to-action__element">

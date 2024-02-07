@@ -1,28 +1,25 @@
 class Api {
   constructor() {
-    this._baseUrl = process.env.REACT_APP_BASE_URL;
+    this._baseUrl = 'https://reconciliandometimidez.api-us1.com/api/3/contacts';
     this._options = {
       headers: {
+        accept: 'application/json',
+        'content-type': 'application/json',
         'Api-Token': process.env.REACT_APP_API_KEY,
-        'Content-Type': 'application/json',
-        Accept: 'application/json, text/plain, */*',
       },
-      // mode: 'no-cors',
     };
   }
 
   _fetchData() {
-    console.log(this);
-    console.log(process.env);
-    // return fetch(this._baseUrl, this._options)
-    //   .then((res) => {
-    //     if (res.ok) {
-    //       return res.json();
-    //     } else {
-    //       return Promise.reject(`Error: ${res.status}`);
-    //     }
-    //   })
-    //   .catch((err) => console.error(err));
+    return fetch(this._baseUrl, this._options)
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          return Promise.reject(`Error: ${res.status}`);
+        }
+      })
+      .catch((err) => console.error(err));
   }
 
   postUser(data) {

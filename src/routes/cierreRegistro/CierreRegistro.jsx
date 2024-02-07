@@ -111,7 +111,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
               <p className="cierre-registro__recordatorio-text">
                 Quiero que la información que te entregue sea la mejor posible y
                 la más útil para ti, por ello, te pido que me ayudes contestando
-                las siguientes 3 preguntas, te tomará menos de 5 min.
+                las siguientes preguntas, te tomará menos de 5 min.
               </p>
               <motion.a
                 className="cierre-registro__btn"

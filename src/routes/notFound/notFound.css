@@ -1,0 +1,12 @@
+.not-found {
+  background-color: #000821;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.not-found__title {
+  font-size: 2rem;
+}

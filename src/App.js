@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import VentasL from './routes/ventasL/VentasL';
 import VentasS from './routes/ventasS/VentasS';
@@ -7,6 +7,8 @@ import CierreVenta from './routes/cierreVenta/CierreVenta';
 import Registro from './routes/registro/Registro';
 import Repeticion from './routes/repeticion/Repeticion';
 import { countdown } from './utils/countdown';
+import NotFound from './routes/notFound/NotFound';
+import api from './utils/api';
 
 function App() {
   const [formValues, setFormValues] = useState({
@@ -22,23 +24,8 @@ function App() {
   const [hour, setHour] = useState('');
   const [timestamp, setTimestamp] = useState('');
 
-  const webinarDate = 'Feb 13, 2024 20:00:00';
-  const cursoDate =
-    'Lunes y miércoles de 19:00 a 21:00 hrs. (horario CDMX) del 4 de marzo al 17 de abril (sin sesiones en Semana Santa)';
-
-  const urls = {
-    // Cambios
-    repetitionUrl: 'https://www.youtube.com/embed/',
-    fbWebinarUrl: 'http://www.facebook.com',
-    whatsWebinarUrl: 'http://www.whatsapp.com',
-
-    // Permas
-    buyoutUrl: 'https://pay.hotmart.com/Q90647461B?checkoutMode=10',
-    fbPermaUrl: 'http://www.facebook.com',
-    encuestaWebinarUrl: 'http://www.google.com',
-    igUrl: 'http://www.instagram.com',
-    tikTokUrl: 'http://www.tiktok.com',
-  };
+  const webinarDate = process.env.REACT_APP_WEBINAR_DATE;
+  const cursoDate = process.env.REACT_APP_PROGRAMA_DATE;
 
   useEffect(() => {
     const webinarHour = new Date(webinarDate).getHours();
@@ -47,7 +34,23 @@ function App() {
     setTimestamp(new Date(webinarDate).getTime());
     setHour(`${webinarHour}:${webinarMinutes ? 0 : '00'}`);
     countdown(timestamp, setCount);
-  }, [timestamp, hour]);
+  }, [timestamp, hour, webinarDate]);
+
+  const navigate = useNavigate();
+
+  const urls = {
+    // Cambios
+    repetitionUrl: process.env.REACT_APP_REPETITION_URL,
+    fbWebinarUrl: process.env.REACT_APP_FB_WEBINAR_URL,
+    whatsWebinarUrl: process.env.REACT_APP_WA_WEBINAR_URL,
+
+    // Permas
+    buyoutUrl: process.env.REACT_APP_BUYOUT_URL,
+    encuestaWebinarUrl: process.env.REACT_APP_ENCUESTA_WEBINAR_URL,
+    fbPermaUrl: process.env.REACT_APP_FB_PERMA_URL,
+    igUrl: process.env.REACT_APP_IG_URL,
+    tikTokUrl: process.env.REACT_APP_TIKTOK_URL,
+  };
 
   const handleChange = (e) => {
     const { target } = e;
@@ -63,21 +66,21 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const data = { user: formValues.username, email: formValues.email };
-      // await api.postUser(formValues);
-      // https://dev.to/saragibby/better-way-to-embed-active-campaign-forms-into-react-n9n
-      if (!data.user) {
-        setMsgSuccess(false);
-      }
-      if (data.user) {
-        setMsgSuccess(true);
-      }
+      const data = await api.postUser(formValues);
+      // if (!data.username) {
+      //   setMsgSuccess(false);
+      // }
+      // if (data.username) {
+      //   setMsgSuccess(true);
+      // }
+      console.log(data);
       setFormValues({
         username: '',
         email: '',
       });
       setSentUser(true);
       setLoading(false);
+      navigate('/cierre-r');
       return;
     } catch (error) {
       setLoading(false);
@@ -134,6 +137,7 @@ function App() {
           path="/repeticion"
           element={<Repeticion repetitionUrl={urls.repetitionUrl} />}
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

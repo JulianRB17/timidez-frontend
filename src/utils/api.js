@@ -1,6 +1,6 @@
 class Api {
   constructor() {
-    this._baseUrl = 'https://reconciliandometimidez.api-us1.com/api/3/contacts';
+    this._baseUrl = 'https://timidez.io/api/users';
     this._options = {
       headers: {
         accept: 'application/json',

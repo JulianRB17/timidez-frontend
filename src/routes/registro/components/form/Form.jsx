@@ -65,7 +65,7 @@ export default function Form({
             id="username"
             placeholder="Escribe tu nombre aquí"
             onChange={onChange}
-            maxLength={11}
+            maxLength={30}
             required
             value={formValues.username}
           />

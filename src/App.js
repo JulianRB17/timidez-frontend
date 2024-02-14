@@ -67,14 +67,19 @@ function App() {
     setLoading(true);
     try {
       const contactData = await api.postUser(formValues);
-      const listData = await api.postContactToAList(contactData.id);
-      if (!listData.contactList) {
+      if (contactData.contact) {
+        const listData = await api.postContactToAList(contactData.id);
+
+        if (!listData.contactList) {
+          setMsgSuccess(false);
+        }
+        if (listData.contactList) {
+          setMsgSuccess(true);
+          setSentUser(true);
+          navigate('/cierre-r');
+        }
+      } else {
         setMsgSuccess(false);
-      }
-      if (listData.contactList) {
-        setMsgSuccess(true);
-        setSentUser(true);
-        navigate('/cierre-r');
       }
       setFormValues({
         username: '',

@@ -5,7 +5,6 @@ class Api {
       headers: {
         accept: 'application/json',
         'content-type': 'application/json',
-        'Api-Token': process.env.REACT_APP_API_KEY,
       },
     };
   }
@@ -20,16 +19,6 @@ class Api {
         }
       })
       .catch((err) => console.error(err));
-  }
-
-  postUser(data) {
-    const { username, email } = data;
-    this._options.method = 'POST';
-    this._options.body = JSON.stringify({
-      username,
-      email,
-    });
-    return this._fetchData();
   }
 
   // Por si algún día regreso a mi backend

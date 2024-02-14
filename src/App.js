@@ -66,21 +66,21 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const data = await api.postUser(formValues);
-      // if (!data.username) {
-      //   setMsgSuccess(false);
-      // }
-      // if (data.username) {
-      //   setMsgSuccess(true);
-      // }
-      console.log(data);
+      const contactData = await api.postUser(formValues);
+      const listData = await api.postContactToAList(contactData.id);
+      if (!listData.contactList) {
+        setMsgSuccess(false);
+      }
+      if (listData.contactList) {
+        setMsgSuccess(true);
+        setSentUser(true);
+        navigate('/cierre-r');
+      }
       setFormValues({
         username: '',
         email: '',
       });
-      setSentUser(true);
       setLoading(false);
-      navigate('/cierre-r');
       return;
     } catch (error) {
       setLoading(false);

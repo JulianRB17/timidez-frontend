@@ -9,6 +9,12 @@ class Api {
     };
   }
 
+  postContact({ username, email }) {
+    this._options.method = 'POST';
+    this._options.body = JSON.stringify({ firstName: username, email });
+    this._fetchData();
+  }
+
   _fetchData() {
     return fetch(this._baseUrl, this._options)
       .then((res) => {

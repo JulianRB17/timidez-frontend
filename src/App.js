@@ -66,18 +66,11 @@ function App() {
     e.preventDefault();
     setLoading(true);
     try {
-      const contactData = await api.postUser(formValues);
-      if (contactData.contact) {
-        const listData = await api.postContactToAList(contactData.id);
-
-        if (!listData.contactList) {
-          setMsgSuccess(false);
-        }
-        if (listData.contactList) {
-          setMsgSuccess(true);
-          setSentUser(true);
-          navigate('/cierre-r');
-        }
+      const contactData = await api.postContact(formValues);
+      if (contactData.contactList) {
+        setMsgSuccess(true);
+        setSentUser(true);
+        navigate('/cierre-r');
       } else {
         setMsgSuccess(false);
       }

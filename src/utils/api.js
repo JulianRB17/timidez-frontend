@@ -12,6 +12,7 @@ class Api {
   async postContact({ username, email }) {
     this._options.method = 'POST';
     this._options.body = JSON.stringify({ firstName: username, email });
+    console.log(this);
     const data = await this._fetchData();
     return data;
   }

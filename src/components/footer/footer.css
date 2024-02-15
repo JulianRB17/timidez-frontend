@@ -33,7 +33,7 @@
 @media screen and (max-width: 500px) {
   .footer {
     flex-direction: column;
-    padding: 0 1 em;
+    padding: 0 1em;
   }
   .footer__logo {
     margin: 1em;
@@ -41,7 +41,12 @@
   }
 
   .footer__credits {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 1em;
+  }
+
+  .footer__hotmart-txt {
+    font-size: 0.6rem;
+    width: 100%;
   }
 }

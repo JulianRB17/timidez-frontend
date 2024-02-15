@@ -9,22 +9,24 @@ class Api {
     };
   }
 
-  postContact({ username, email }) {
+  async postContact({ username, email }) {
     this._options.method = 'POST';
     this._options.body = JSON.stringify({ firstName: username, email });
-    this._fetchData();
+    const data = await this._fetchData();
+    return data;
   }
 
-  _fetchData() {
-    return fetch(this._baseUrl, this._options)
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        } else {
-          return Promise.reject(`Error: ${res.status}`);
-        }
-      })
-      .catch((err) => console.error(err));
+  async _fetchData() {
+    try {
+      const res = await fetch(this._baseUrl, this._options);
+      if (res.ok) {
+        return res.json();
+      } else {
+        return Promise.reject(`Error: ${res.status}`);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   // Por si algún día regreso a mi backend

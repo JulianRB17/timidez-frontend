@@ -147,7 +147,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
               >
                 Instagram
               </motion.a>
-              <motion.a
+              {/* <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -161,7 +161,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
                 href={tikTokUrl}
               >
                 Tiktok
-              </motion.a>
+              </motion.a> */}
               <p className="cierre-registro__recordatorio-text cierre-registro__recordatorio-text_lg">
                 ¡Nos vemos muy pronto!
               </p>

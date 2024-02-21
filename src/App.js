@@ -23,34 +23,24 @@ function App() {
   const [localDate, setLocalDate] = useState('');
   const [hour, setHour] = useState('');
   const [timestamp, setTimestamp] = useState('');
-
-  const webinarDate = process.env.REACT_APP_WEBINAR_DATE;
-  const cursoDate = process.env.REACT_APP_PROGRAMA_DATE;
+  const [urls, setUrls] = useState('');
+  const [dates, setDates] = useState('');
 
   useEffect(() => {
-    const webinarHour = new Date(webinarDate).getHours();
-    const webinarMinutes = new Date(webinarDate).getSeconds();
-    setLocalDate(new Date(webinarDate).toLocaleDateString('es-ES'));
-    setTimestamp(new Date(webinarDate).getTime());
-    setHour(`${webinarHour}:${webinarMinutes ? 0 : '00'}`);
-    countdown(timestamp, setCount);
-  }, [timestamp, hour, webinarDate]);
+    (async () => {
+      const data = await api.getData();
+      setDates(data.dates);
+      setUrls(data.urls);
+      const webinarHour = new Date(dates.webinarDate).getHours();
+      const webinarMinutes = new Date(dates.webinarDate).getSeconds();
+      setLocalDate(new Date(dates.webinarDate).toLocaleDateString('es-ES'));
+      setTimestamp(new Date(dates.webinarDate).getTime());
+      setHour(`${webinarHour}:${webinarMinutes ? 0 : '00'}`);
+      countdown(timestamp, setCount);
+    })();
+  }, [timestamp, hour, dates.webinarDate]);
 
   const navigate = useNavigate();
-
-  const urls = {
-    // Cambios
-    repetitionUrl: process.env.REACT_APP_REPETITION_URL,
-    fbWebinarUrl: process.env.REACT_APP_FB_WEBINAR_URL,
-    whatsWebinarUrl: process.env.REACT_APP_WA_WEBINAR_URL,
-
-    // Permas
-    buyoutUrl: process.env.REACT_APP_BUYOUT_URL,
-    encuestaWebinarUrl: process.env.REACT_APP_ENCUESTA_WEBINAR_URL,
-    fbPermaUrl: process.env.REACT_APP_FB_PERMA_URL,
-    igUrl: process.env.REACT_APP_IG_URL,
-    tikTokUrl: process.env.REACT_APP_TIKTOK_URL,
-  };
 
   const handleChange = (e) => {
     const { target } = e;
@@ -110,7 +100,10 @@ function App() {
         <Route
           path="/cierre-v"
           element={
-            <CierreVenta cursoDate={cursoDate} fbPermaUrl={urls.fbPermaUrl} />
+            <CierreVenta
+              cursoDate={dates.programaDate}
+              fbPermaUrl={urls.fbPermaUrl}
+            />
           }
         />
         <Route
@@ -131,10 +124,7 @@ function App() {
             />
           }
         />
-        <Route
-          path="/repeticion"
-          element={<Repeticion repetitionUrl={urls.repetitionUrl} />}
-        />
+        <Route path="/repeticion" element={<Repeticion urls={urls} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

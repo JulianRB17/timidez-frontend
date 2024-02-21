@@ -2,13 +2,8 @@ import { motion } from 'framer-motion';
 import Footer from '../../components/footer/Footer';
 
 export default function CierreRegistro({ localDate, count, urls, hour }) {
-  const {
-    fbWebinarUrl,
-    whatsWebinarUrl,
-    encuestaWebinarUrl,
-    igUrl,
-    tikTokUrl,
-  } = urls;
+  const { fbGroupUrl, whatsappUrl, encuestaWebinarUrl, igUrl, tikTokUrl } =
+    urls;
 
   return (
     <>
@@ -85,7 +80,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
                 whileHover={{ scale: 1.2 }}
                 rel="noopener noreferrer"
                 title="Únete al grupo de facebook"
-                href={fbWebinarUrl}
+                href={fbGroupUrl}
               >
                 Únete al grupo de fb
               </motion.a>
@@ -104,7 +99,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
                 whileHover={{ scale: 1.2 }}
                 rel="noopener noreferrer"
                 title="Únete al grupo de whatsapp"
-                href={whatsWebinarUrl}
+                href={whatsappUrl}
               >
                 Únete al grupo de whatsapp
               </motion.a>

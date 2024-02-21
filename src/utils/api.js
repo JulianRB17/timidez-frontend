@@ -1,6 +1,7 @@
 class Api {
   constructor() {
-    this._baseUrl = 'https://timidez.io/api/users';
+    // this._baseUrl = 'https://timidez.io/api/';
+    this._baseUrl = 'http://localhost:3001/';
     this._options = {
       headers: {
         accept: 'application/json',
@@ -11,14 +12,23 @@ class Api {
 
   async postContact({ username, email }) {
     this._options.method = 'POST';
+    this._specificUrl = 'users';
     this._options.body = JSON.stringify({ firstName: username, email });
+    const data = await this._fetchData();
+    return data;
+  }
+
+  async getData() {
+    this._options.method = 'GET';
+    this._specificUrl = 'data';
+    this._options.body = null;
     const data = await this._fetchData();
     return data;
   }
 
   async _fetchData() {
     try {
-      const res = await fetch(this._baseUrl, this._options);
+      const res = await fetch(this._baseUrl + this._specificUrl, this._options);
       if (res.ok) {
         return res.json();
       } else {

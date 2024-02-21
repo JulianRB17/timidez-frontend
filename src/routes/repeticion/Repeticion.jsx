@@ -2,7 +2,10 @@ import { motion } from 'framer-motion';
 import Footer from '../../components/footer/Footer';
 import logoSrc from '../../assets/logo-transparente.png';
 
-export default function Repeticion({ repetitionUrl }) {
+export default function Repeticion(urls) {
+  const { repetitionUrl, buyoutUrl } = urls;
+  console.log(repetitionUrl, buyoutUrl);
+
   return (
     <>
       <section className="repeticion">
@@ -81,7 +84,7 @@ export default function Repeticion({ repetitionUrl }) {
               whileHover={{ scale: 1.2 }}
               rel="noopener noreferrer"
               title="Adquiere ahora el programa"
-              href="/"
+              href={buyoutUrl}
             >
               Haz click aquí
             </motion.a>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import metodologiaSrc from '../../assets/metodologia.webp';
 
-export default function Info() {
+export default function Info({ dates }) {
   return (
     <section className="info">
       <div className="info__container">
@@ -45,7 +45,7 @@ export default function Info() {
           initial={{ opacity: 0.5, y: '-0.5rem' }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
         >
-          Generar experiencias nuevas: desarrollo de habilidades sociales
+          Generar experiencias nuevas: d esarrollo de habilidades sociales
         </motion.h3>
         <motion.p
           className="info__text"
@@ -234,7 +234,7 @@ export default function Info() {
           El programa está dividido en 9 módulos que se revisarán a lo largo de
           6 semanas del{' '}
           <span className="info__tex info__text_accent">
-            {process.env.REACT_APP_DATE_SEGMENT}:
+            {dates.moduleDates}:
           </span>
         </motion.p>
         <motion.ul className="info__list">
@@ -244,7 +244,7 @@ export default function Info() {
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
             <h3 className="info__subtitle">MÓDULO 1: ¿Qué es la timidez? </h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_1}</p>
+            <p className="info__date">{dates.moduleDate_1}</p>
             <p className="info__text">
               Se aprenderá de manera teórica qué es la timidez, la diferencia
               con el ser una perona introvertida: puede haber gente extrovertida
@@ -263,7 +263,7 @@ export default function Info() {
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
             <h3 className="info__subtitle">MÓDULO 2: Reconocer mi voz</h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_2}</p>
+            <p className="info__date">{dates.moduleDate_2}</p>
             <p className="info__text">
               El mundo está constituido por una gran cantidad de personas
               tímidas, sin embargo no está hecho para éstas. Durante este módulo
@@ -291,7 +291,7 @@ export default function Info() {
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
             <h3 className="info__subtitle">MÓDULO 3: ¿De verdad actuar?</h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_3}</p>
+            <p className="info__date">{dates.moduleDate_3}</p>
             <p className="info__text">
               Ahora sí entraremos al mundo actoral. Aprenderás qué es la
               actuación y por qué ésta implica arrancarse máscaras sociales.
@@ -313,7 +313,7 @@ export default function Info() {
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
             <h3 className="info__subtitle">MÓDULO 4: El mundo interno</h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_4}</p>
+            <p className="info__date">{dates.moduleDate_4}</p>
             <p className="info__text">
               Como la ciencia se encarga de estudiar y entender la realidad, la
               psicología, parte de la filosofía y el arte se dedican a entender
@@ -339,7 +339,7 @@ export default function Info() {
             <h3 className="info__subtitle">
               MÓDULO 5: Descubriendo el personaje
             </h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_5}</p>
+            <p className="info__date">{dates.moduleDate_5}</p>
             <p className="info__text">
               Es muy difícil pensar en actuar y no pensar en el concepto de
               personaje, ese ser y no la persona que lo encarna. ¿Cómo puedes
@@ -367,7 +367,7 @@ export default function Info() {
             <h3 className="info__subtitle">
               MÓDULO 6: Habla y escucha: voz y retroalimentación
             </h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_6}</p>
+            <p className="info__date">{dates.moduleDate_6}</p>
             <p className="info__text">
               La gente tímida muchas veces somos gente profundamente cruel con
               nosotras/os mismas/os. A lo largo de este módulo, por un lado
@@ -393,7 +393,7 @@ export default function Info() {
             <h3 className="info__subtitle">
               MÓDULO 7: Del texto al cuerpo, tus palabras
             </h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_7}</p>
+            <p className="info__date">{dates.moduleDate_7}</p>
             <p className="info__text">
               Hay veces en la vida en la que desearíamos que alguien nos dijera
               qué decir para salir bien de alguna situación. La cosa es que,
@@ -421,7 +421,7 @@ export default function Info() {
             <h3 className="info__subtitle">
               MÓDULO 8: Accionar, siempre accionar
             </h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_8}</p>
+            <p className="info__date">{dates.moduleDate_8}</p>
             <p className="info__text">
               ¿Te has dado cuenta cómo la gente que no es tímida acciona sin
               pensar mientras que la gente tímida piensa sin accionar? El paso
@@ -441,7 +441,7 @@ export default function Info() {
             whileInView={{ y: 0, transition: { duration: 1 } }}
           >
             <h3 className="info__subtitle">MÓDULO 9: Espacios de seguridad</h3>
-            <p className="info__date">{process.env.REACT_APP_DATE_MODULO_9}</p>
+            <p className="info__date">{dates.moduleDate_9}</p>
             <p className="info__text">
               Estos módulos implican llevar a la práctica todo lo aprendido
               previamente. Recuerda: accionar es lo más importante. También me

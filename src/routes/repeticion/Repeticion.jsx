@@ -2,9 +2,8 @@ import { motion } from 'framer-motion';
 import Footer from '../../components/footer/Footer';
 import logoSrc from '../../assets/logo-transparente.png';
 
-export default function Repeticion(urls) {
+export default function Repeticion({ urls }) {
   const { repetitionUrl, buyoutUrl } = urls;
-  console.log(repetitionUrl, buyoutUrl);
 
   return (
     <>

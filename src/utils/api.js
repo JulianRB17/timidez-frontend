@@ -1,7 +1,7 @@
 class Api {
   constructor() {
-    // this._baseUrl = 'https://timidez.io/api/';
-    this._baseUrl = 'http://localhost:3001/';
+    this._baseUrl = 'https://timidez.io/api/';
+    // this._baseUrl = 'http://localhost:3001/';
     this._options = {
       headers: {
         accept: 'application/json',

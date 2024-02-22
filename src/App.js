@@ -23,22 +23,27 @@ function App() {
   const [localDate, setLocalDate] = useState('');
   const [hour, setHour] = useState('');
   const [timestamp, setTimestamp] = useState('');
-  const [urls, setUrls] = useState('');
-  const [dates, setDates] = useState('');
+  const [urls, setUrls] = useState({});
+  const [dates, setDates] = useState({});
 
   useEffect(() => {
     (async () => {
       const data = await api.getData();
       setDates(data.dates);
       setUrls(data.urls);
-      const webinarHour = new Date(dates.webinarDate).getHours();
-      const webinarMinutes = new Date(dates.webinarDate).getSeconds();
-      setLocalDate(new Date(dates.webinarDate).toLocaleDateString('es-ES'));
-      setTimestamp(new Date(dates.webinarDate).getTime());
-      setHour(`${webinarHour}:${webinarMinutes ? 0 : '00'}`);
-      countdown(timestamp, setCount);
+      return;
     })();
-  }, [timestamp, hour, dates.webinarDate]);
+  }, []);
+
+  useEffect(() => {
+    setTimestamp(new Date(dates.webinarDate).getTime());
+    const webinarHour = new Date(dates.webinarDate).getHours();
+    const webinarMinutes = new Date(dates.webinarDate).getSeconds();
+    setLocalDate(new Date(dates.webinarDate).toLocaleDateString('es-ES'));
+    setHour(`${webinarHour}:${webinarMinutes ? 0 : '00'}`);
+    countdown(timestamp, setCount);
+    return;
+  }, [hour, timestamp, dates.webinarDate]);
 
   const navigate = useNavigate();
 
@@ -84,8 +89,8 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<VentasL buyoutUrl={urls.buyoutUrl} />} />
-        <Route path="/programa-s" element={<VentasS />} />
+        <Route path="/" element={<VentasL urls={urls} dates={dates} />} />
+        <Route path="/programa-s" element={<VentasS urls={urls} />} />
         <Route
           path="/cierre-r"
           element={

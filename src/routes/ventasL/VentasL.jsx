@@ -12,7 +12,7 @@ import CallToAction from '../../components/callToAction/CallToAction';
 import Footer from '../../components/footer/Footer';
 import Info from '../../components/info/Info';
 
-export default function VentasL({ buyoutUrl }) {
+export default function VentasL({ urls, dates }) {
   return (
     <section className="ventas-l">
       <HeroVentas />
@@ -20,14 +20,14 @@ export default function VentasL({ buyoutUrl }) {
       <Justificacion />
       <Bio />
       <Venta />
-      <Info />
-      <CallToActionSm buyoutUrl={buyoutUrl} />
+      <Info dates={dates} />
+      <CallToActionSm buyoutUrl={urls.buyoutUrl} />
       <Bonos />
       <Garantia />
-      <CallToActionSm buyoutUrl={buyoutUrl} />
-      <Precio buyoutUrl={buyoutUrl} />
+      <CallToActionSm buyoutUrl={urls.buyoutUrl} />
+      <Precio buyoutUrl={urls.buyoutUrl} />
       <Faqs />
-      <CallToAction buyoutUrl={buyoutUrl} />
+      <CallToAction buyoutUrl={urls.buyoutUrl} />
       <Footer />
     </section>
   );

@@ -35,7 +35,7 @@ export default function CallToAction({ buyoutUrl }) {
           initial={{ x: '-0.5rem' }}
           whileInView={{ x: 0, transition: { duration: 1 } }}
         >
-          Todo esto, con un valor total de 611 USD tan sólo por 237 USD
+          Todo esto, con un valor total de 611 USD tan sólo por 217 USD
         </motion.p>
       </div>
       <div className="call-to-action__container">

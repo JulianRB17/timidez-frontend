@@ -90,7 +90,10 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<VentasL urls={urls} dates={dates} />} />
-        <Route path="/programa-s" element={<VentasS urls={urls} />} />
+        <Route
+          path="/programa-s"
+          element={<VentasS urls={urls} dates={dates} />}
+        />
         <Route
           path="/cierre-r"
           element={

@@ -71,14 +71,14 @@ export default function Precio({ buyoutUrl }) {
         }}
       >
         <img src={priceSrc} alt="precio original" className="precio__img" />
-        <p className="precio__number">237 USD</p>
+        <p className="precio__number">217 USD</p>
       </motion.div>
       <p className="precio__text">
         Así es, asegurando tu lugar en el programa Reconciliándome con mi
         timidez: herramientas actorales para la vida diaria te llevas un valor
         total de 611 USD
       </p>
-      <p className="precio__text precio__text_accent">por sólo 237 USD</p>.
+      <p className="precio__text precio__text_accent">por sólo 217 USD</p>.
       <motion.a
         href={buyoutUrl}
         className="precio__btn"

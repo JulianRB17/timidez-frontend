@@ -1,27 +1,38 @@
-.hero__parallax {
-  background-image: url('../../../../assets/fondo-registro.jpg');
-  min-height: 100vh;
+.hero {
+  /* min-height: 100vh; */
   width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* padding: 0 6%; */
+  background-color: #000821;
+  padding-bottom: 2em;
 }
 
 .hero__container {
   display: flex;
+}
+
+.hero__container_text {
+  display: flex;
   flex-direction: column;
-  padding: 0 8%;
-  /* height: 93%; */
+  width: 50%;
+  align-items: center;
+  padding-left: 4%;
+}
+
+.hero__img {
+  width: 50%;
+  height: fit-content;
+  margin-top: 3em;
 }
 
 .hero__hook {
   color: #ccc7e1;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  margin: 1em auto;
+  margin: 0 auto 1em auto;
+  padding-top: 1em;
   text-align: center;
   width: 80%;
+  margin: 0 auto 1em;
 }
 
 .hero__hook_accent {
@@ -32,16 +43,16 @@
   font-size: 2rem;
   color: #e17900;
   margin: 0;
-  margin-bottom: 1em;
-  width: 60%;
+  /* width: 70%; */
   font-weight: 600;
+  text-shadow: 0 0 5px #000821;
 }
 
 .hero__subtitle {
-  font-size: 1.5rem;
-  width: 55%;
+  font-size: 1.8rem;
+  /* width: 65%; */
   font-weight: 400;
-  margin: 1em 0 1.5em 0;
+  margin: 1em 0;
 }
 
 .hero__btn-container {
@@ -65,111 +76,102 @@
   text-align: center;
 }
 
-.hero__credits-container {
-  position: absolute;
-  bottom: 5px;
-  align-self: flex-end;
-}
-
-.hero__credits {
-  margin: 0;
-  text-align: end;
-}
-
-.hero__text {
-  color: #ffe3bc;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
 .hero__date-container {
   position: relative;
   margin-bottom: 2em;
-  padding: 0 1em;
-}
-
-.hero__date-overlay {
-  background-color: #000821;
-  mix-blend-mode: soft-light;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 15px;
+  width: 100%;
 }
 
 .hero__date {
   position: relative;
   color: #ffe3bc;
   z-index: 2;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  margin: 0.5em;
   text-align: center;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1000px) {
   .hero__hook {
-    font-size: 1rem;
+    font-weight: 300;
   }
 
   .hero__title {
-    font-size: 2rem;
+    font-weight: 300;
   }
 
   .hero__subtitle {
-    font-size: 1rem;
+    font-weight: 300;
   }
 
-  .hero__credits {
+  .hero__btn {
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .hero__container_text {
+    width: 90%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero__img {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  .hero__hook {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .hero__date {
     font-size: 1rem;
   }
 
   .hero__btn {
     font-size: 1rem;
+    font-weight: 300;
   }
+}
 
-  .hero__text {
+@media screen and (max-width: 300px) {
+  .hero__hook {
     font-size: 1rem;
   }
-}
-
-@media screen and (max-width: 900px) {
-  .hero__title {
-    font-size: 1.5rem;
-  }
-
-  .hero__credits {
-    font-size: 0.7rem;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .hero__parallax {
-    background-image: url('../../../../assets/heroFondoSm.webp');
-  }
-
-  .hero__hook {
-    width: 100%;
-    font-size: 0.75rem;
-  }
 
   .hero__title {
-    width: 100%;
-    text-align: center;
+    font-size: 1.3rem;
   }
 
   .hero__subtitle {
-    width: 90%;
-    font-size: 0.9rem;
-    text-align: center;
+    font-size: 1rem;
   }
 
-  .hero__container {
-    align-items: center;
+  .hero__date {
+    font-size: 1rem;
   }
 
-  .hero__credits {
-    display: none;
+  .hero__btn {
+    font-size: 1rem;
   }
 }

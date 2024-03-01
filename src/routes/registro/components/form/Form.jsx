@@ -52,9 +52,9 @@ export default function Form({
   return (
     <section className="form">
       <form action="" id="form" className="form__container" onSubmit={onSubmit}>
+        <div className="form__overlay" />
         <h1 className="form__title">Regístrate GRATIS</h1>
         <div className="form__input-container">
-          <div className="form__overlay" />
           <label htmlFor="name" className="form__label">
             {' '}
             Nombre:{' '}
@@ -88,8 +88,6 @@ export default function Form({
         </div>
         <SendBtn />
       </form>
-      <p className="form__credits">Fotografía: Carlos Alvar</p>
-      <p className="form__credits">Dirección escénica: Julián Reyes Botello</p>
     </section>
   );
 }

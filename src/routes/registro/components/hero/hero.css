@@ -4,10 +4,12 @@
   /* padding: 0 6%; */
   background-color: #000821;
   padding-bottom: 2em;
+  padding-top: 2em;
 }
 
 .hero__container {
   display: flex;
+  padding-top: 2em;
 }
 
 .hero__container_text {
@@ -26,13 +28,12 @@
 
 .hero__hook {
   color: #ccc7e1;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 500;
-  margin: 0 auto 1em auto;
-  padding-top: 1em;
   text-align: center;
   width: 80%;
-  margin: 0 auto 1em;
+  margin: 0 auto;
+  padding-top: 0.5em;
 }
 
 .hero__hook_accent {
@@ -43,14 +44,12 @@
   font-size: 2rem;
   color: #e17900;
   margin: 0;
-  /* width: 70%; */
   font-weight: 600;
   text-shadow: 0 0 5px #000821;
 }
 
 .hero__subtitle {
   font-size: 1.8rem;
-  /* width: 65%; */
   font-weight: 400;
   margin: 1em 0;
 }

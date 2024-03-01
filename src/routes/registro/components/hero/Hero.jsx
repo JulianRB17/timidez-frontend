@@ -5,7 +5,7 @@ import picSrc from '../../../../assets/fondo-amixs.webp';
 export default function Hero({ localDate, hour, count }) {
   return (
     <section className="hero">
-      <motion.h1
+      <motion.h2
         className="hero__hook"
         initial={{
           opacity: 0,
@@ -17,10 +17,23 @@ export default function Hero({ localDate, hour, count }) {
           transition: { duration: 1 },
         }}
       >
-        ¿Sientes que la timidez te ha frenado oportunidades en la vida? Esta
-        masterclass <span className="hero__hook_accent">GRATUITA</span> es para
+        ¿Cansado de sentirte sola/o en una habitación llena de gente?
+      </motion.h2>
+      <motion.h2
+        className="hero__hook"
+        initial={{
+          opacity: 0,
+          y: '-1rem',
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: { duration: 1 },
+        }}
+      >
+        Esta clase <span className="hero__hook_accent">GRATUITA</span> es para
         ti.
-      </motion.h1>
+      </motion.h2>
       <div className="hero__container">
         <div className="hero__container_text">
           <motion.h1
@@ -85,7 +98,7 @@ export default function Hero({ localDate, hour, count }) {
             </motion.a>
           </motion.div>
         </div>
-        <img src={picSrc} alt="Grupo de amix" class="hero__img" />
+        <img src={picSrc} alt="Grupo de amix" className="hero__img" />
       </div>
     </section>
   );

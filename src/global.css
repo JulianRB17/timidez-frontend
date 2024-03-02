@@ -27,7 +27,6 @@
 
 @import url('./routes/cierreRegistro/cierreRegistro.css');
 @import url('./routes/cierreVenta/cierreVenta.css');
-@import url('./routes/registro/registro.css');
 @import url('./routes/registro/components/secrets/secrets.css');
 @import url('./routes/registro/components/form/form.css');
 @import url('./routes/registro/components/hero/hero.css');

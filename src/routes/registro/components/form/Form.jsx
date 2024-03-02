@@ -51,6 +51,9 @@ export default function Form({
 
   return (
     <section className="form">
+      <p className="form__hook">
+        No sigas perdiéndote de la vida por el terror al juicio ajeno.
+      </p>
       <form action="" id="form" className="form__container" onSubmit={onSubmit}>
         <div className="form__overlay" />
         <h1 className="form__title">Regístrate GRATIS</h1>
@@ -88,6 +91,7 @@ export default function Form({
         </div>
         <SendBtn />
       </form>
+      <div className="form__third-element" />
     </section>
   );
 }

@@ -1,10 +1,12 @@
 import { motion } from 'framer-motion';
 import picSrc from '../../../../assets/fondo-amixs.webp';
+import logoSrc from '../../../../assets/logo-transparente.png';
 // import { Barlow } from 'next/font/google';
 
 export default function Hero({ localDate, hour, count }) {
   return (
     <section className="hero">
+      <img src={logoSrc} alt="logo" className="hero__logo" />
       <motion.h2
         className="hero__hook"
         initial={{
@@ -17,7 +19,7 @@ export default function Hero({ localDate, hour, count }) {
           transition: { duration: 1 },
         }}
       >
-        ¿Cansado de sentirte sola/o en una habitación llena de gente?
+        ¿Cansada/o de sentirte sola/o en una habitación llena de gente?
       </motion.h2>
       <motion.h2
         className="hero__hook"
@@ -65,9 +67,9 @@ export default function Hero({ localDate, hour, count }) {
               transition: { duration: 1 },
             }}
           >
-            ¡Atención! ¿Alguna vez te has preguntado cómo le hacen algunas
-            personas para que no les dé pena estar frente a cientos o miles de
-            personas? Aparta tu lugar en esta clase gratuita.
+            Masterclass donde te compartiré herramientas actorales que{' '}
+            <span className="hero__hook_accent">CUALQUIER PERSONA</span> puede
+            usar en su vida diaria.
           </motion.h3>
           <motion.div
             className="hero__btn-container"

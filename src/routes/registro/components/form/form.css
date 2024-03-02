@@ -1,25 +1,26 @@
 .form {
   background-image: url('../../../../assets/fondoForm.webp');
-  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3% 8% 1%;
+  padding: 0 8%;
   display: flex;
   flex-direction: column;
-  position: relative;
-  z-index: -2;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .form__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15% 25%;
+  /* margin: 5% 25% 15%; */
+  width: 50%;
   box-shadow: #ffe3bc 0 0 1px;
   position: relative;
-  border-radius: 5px;
+  border-radius: 1em;
 }
 
 .form__overlay {
@@ -31,16 +32,28 @@
   /* mix-blend-mode: soft-light; */
   mix-blend-mode: color;
   background-color: #071a55;
-  border-radius: 5px;
-  z-index: -1;
+  border-radius: 1em;
+  z-index: 1;
+}
+
+.form__hook {
+  font-size: 2.5rem;
+  text-shadow: #071a55 0.04em 0.04em, #071a55 -0.04em 0.04em,
+    #071a55 0.04em -0.04em, #071a55 -0.04em -0.04em;
+  margin: 0;
+  text-align: center;
+  color: #ffe3bc;
+  padding-top: 2%;
 }
 
 .form__title {
   color: #e17900;
   margin: 1em auto;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.3rem;
+  font-weight: 500;
   text-shadow: 0 0 5px #071a55;
+  position: relative;
+  z-index: 2;
 }
 
 .form__input-container {
@@ -127,20 +140,32 @@
 
 @media screen and (max-width: 700px) {
   .form__container {
-    margin: 15% 15%;
+    width: 80%;
   }
 
   .form__title {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .form__label {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
+  }
+
+  .form__hook {
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 425px) {
   .form__btn {
     font-size: 0.75rem;
+  }
+
+  .form__title {
+    font-size: 1.5rem;
+  }
+
+  .form__label {
+    font-size: 1rem;
   }
 }

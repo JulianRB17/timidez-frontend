@@ -1,0 +1,143 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: 5% 25% 15%; */
+  width: 50%;
+  box-shadow: #ffe3bc 0 0 1px;
+  position: relative;
+  border-radius: 1em;
+}
+
+.form__btn {
+  align-self: center;
+  background-color: #e17900;
+  padding: 0.5em 2em;
+  font-size: 1.3rem;
+  border-radius: 0.5em;
+  color: #ffe3bc;
+  box-shadow: #ffe3bc 1px 1px, #ffe3bc -1px -1px, #ffe3bc 1px -1px,
+    #ffe3bc -1px 1px;
+  cursor: pointer;
+  margin: 2em 0;
+  z-index: 2;
+  width: 80%;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+}
+
+.form__btn-inactive {
+  background-color: gray;
+}
+
+.form__input-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form__input {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  margin: 0 0 0.5em 0;
+  z-index: 2;
+}
+
+.form__input::placeholder {
+  font-size: 0.9em;
+}
+
+.form__input:focus {
+  outline: none;
+  box-shadow: #ffe3bc 0 0 10px;
+  color: #071a55;
+}
+
+.form__input:invalid {
+  box-shadow: red 0 0 10px;
+}
+
+.form__error-msg {
+  display: none;
+}
+
+.form__error-msg_active {
+  display: block;
+  color: red;
+  margin: 0.1em auto 0.3em 0;
+  text-shadow: #ffe3bc 0 0 1px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.form__label {
+  margin: 0.5em 0;
+  font-size: 1.5rem;
+  color: #ffe3bc;
+  text-shadow: 0 0 5px #071a55;
+}
+
+.form__msg {
+  align-self: center;
+  font-size: 1.5rem;
+  color: #ffe3bc;
+  font-weight: 700;
+}
+
+.form__msg_failed {
+  color: red;
+}
+
+.form__title {
+  color: #e17900;
+  margin: 1em auto;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-shadow: 0 0 5px #071a55;
+  position: relative;
+  z-index: 2;
+}
+
+.form__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* mix-blend-mode: soft-light; */
+  mix-blend-mode: color;
+  background-color: #071a55;
+  border-radius: 1em;
+  z-index: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .form {
+    width: 80%;
+  }
+
+  .form__title {
+    font-size: 2rem;
+  }
+
+  .form__label {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form__btn {
+    font-size: 0.75rem;
+  }
+
+  .form__label {
+    font-size: 1rem;
+  }
+
+  .form__title {
+    font-size: 1.5rem;
+  }
+}

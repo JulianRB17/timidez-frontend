@@ -126,9 +126,6 @@ function App() {
               msgSuccess={msgSuccess}
               setSentUser={setSentUser}
               formValues={formValues}
-              localDate={localDate}
-              hour={hour}
-              count={count}
             />
           }
         />

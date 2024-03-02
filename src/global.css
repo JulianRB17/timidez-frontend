@@ -24,11 +24,12 @@
 @import url('./components/precio/precio.css');
 @import url('./components/presentacion/presentacion.css');
 @import url('./components/venta/venta.css');
+@import url('./components/form/form.css');
 
 @import url('./routes/cierreRegistro/cierreRegistro.css');
 @import url('./routes/cierreVenta/cierreVenta.css');
 @import url('./routes/registro/components/secrets/secrets.css');
-@import url('./routes/registro/components/form/form.css');
+@import url('./routes/registro/components/registroCallToAction/registroCallToAction.css');
 @import url('./routes/registro/components/hero/hero.css');
 @import url('./routes/registro/components/host/host.css');
 @import url('./routes/repeticion/repeticion.css');

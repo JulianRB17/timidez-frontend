@@ -1,9 +1,21 @@
 import { motion } from 'framer-motion';
 import picSrc from '../../../../assets/fondo-amixs.webp';
 import logoSrc from '../../../../assets/logo-transparente.png';
-// import { Barlow } from 'next/font/google';
+import Form from '../../../../components/form/Form';
 
-export default function Hero({ localDate, hour, count }) {
+export default function Hero({
+  localDate,
+  hour,
+  count,
+  onSubmit,
+  onChange,
+  sentUser,
+  isValidForm,
+  loading,
+  msgSuccess,
+  setSentUser,
+  formValues,
+}) {
   return (
     <section className="hero">
       <img src={logoSrc} alt="logo" className="hero__logo" />
@@ -100,7 +112,19 @@ export default function Hero({ localDate, hour, count }) {
             </motion.a>
           </motion.div>
         </div>
-        <img src={picSrc} alt="Grupo de amix" className="hero__img" />
+        <div className="hero__img-container">
+          <img src={picSrc} alt="Grupo de amix" className="hero__img" />
+          <Form
+            onSubmit={onSubmit}
+            onChange={onChange}
+            sentUser={sentUser}
+            isValidForm={isValidForm}
+            loading={loading}
+            msgSuccess={msgSuccess}
+            setSentUser={setSentUser}
+            formValues={formValues}
+          />
+        </div>
       </div>
     </section>
   );

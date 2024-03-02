@@ -1,0 +1,30 @@
+.registro-call-to-action {
+  background-image: url('../../../../assets/fondoForm.webp');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.registro-call-to-action__hook {
+  font-size: 2.5rem;
+  text-shadow: #071a55 0.04em 0.04em, #071a55 -0.04em 0.04em,
+    #071a55 0.04em -0.04em, #071a55 -0.04em -0.04em;
+  margin: 0;
+  text-align: center;
+  color: #ffe3bc;
+  padding-top: 2%;
+}
+
+@media screen and (max-width: 700px) {
+  .registro-call-to-action__hook {
+    font-size: 1.5rem;
+  }
+}

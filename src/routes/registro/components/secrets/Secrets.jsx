@@ -22,8 +22,10 @@ export default function Secrets() {
             1
           </motion.h2>
           <div className="secrets__text">
-            Existen actores o actrices tímidas, no somos gente que nace siendo
-            el centro de atención, entonces ¿Cómo le hacemos?
+            Existe una inteligencia que tiene que ver con las relaciones
+            humanas, se llama inteligencia interpersonal o inteligencia social.
+            Gran maravilla: como cualquier inteligencia se puede desarrollar,
+            aprende cómo hacerle para volverte más inteligente socialmente.
           </div>
         </div>
         <div className="secrets__element">
@@ -51,9 +53,9 @@ export default function Secrets() {
             3
           </motion.h2>
           <div className="secrets__text">
-            Reconciliarte con tu timidez no quiere decir volverte una persona
-            ruidosa o dejar de ser tú, significa que ésta no tome el control de
-            tu vida.
+            La timidez no es algo malo, gran parte del mundo somos gente tímida.
+            Aprende a valorar tu timidez, a dialogar con ella y que esto no
+            implica volverte una persona ruidosa o dejar de ser tú.
           </div>
         </div>
       </div>

@@ -19,19 +19,7 @@ export default function Registro({
 }) {
   return (
     <section className="registro">
-      <Hero
-        localDate={localDate}
-        count={count}
-        hour={hour}
-        onSubmit={onSubmit}
-        onChange={onChange}
-        sentUser={sentUser}
-        isValidForm={isValidForm}
-        loading={loading}
-        msgSuccess={msgSuccess}
-        setSentUser={setSentUser}
-        formValues={formValues}
-      />
+      <Hero localDate={localDate} count={count} hour={hour} />
       <Host />
       <Secrets />
       <Bio />

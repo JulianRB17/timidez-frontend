@@ -1,10 +1,15 @@
 .hero {
-  /* min-height: 100vh; */
-  width: 100%;
-  /* padding: 0 6%; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc7e1;
+}
+
+.hero__header {
   background-color: #000821;
-  padding-bottom: 2em;
-  padding-top: 1em;
 }
 
 .hero__logo {
@@ -15,49 +20,61 @@
 
 .hero__container {
   display: flex;
-  padding-top: 2em;
+  position: relative;
 }
 
 .hero__container_text {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   align-items: center;
-  padding-left: 4%;
+  position: relative;
 }
 
 .hero__img {
-  width: 50%;
+  width: 25%;
   height: fit-content;
-  margin-top: 3em;
+  align-self: flex-end;
 }
 
 .hero__hook {
-  color: #ccc7e1;
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 0;
+  margin: 0;
+  padding: 0.5em 0;
 }
 
 .hero__hook_accent {
-  color: #ffe3bc;
+  color: #e17900;
+  text-shadow: #000821 1px 1px;
 }
 
 .hero__title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #e17900;
   margin: 0;
-  font-weight: 600;
-  text-shadow: 0 0 5px #000821;
+  font-weight: 500;
+  text-shadow: 1px 1px #000821;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1em;
+}
+
+.hero__title_accent {
+  color: #000821;
+  text-shadow: none;
 }
 
 .hero__subtitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
-  margin: 1em 0;
+  margin: 0;
+  color: #000821;
+  position: relative;
+  z-index: 1;
+  padding: 0.5em 1em;
 }
 
 .hero__btn-container {
@@ -79,22 +96,36 @@
   text-decoration: none;
   margin-bottom: 0.5em;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero__date-container {
   position: relative;
-  margin-bottom: 2em;
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 .hero__date {
   position: relative;
-  color: #ffe3bc;
+  color: #000821;
   z-index: 2;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 0.5em;
   text-align: center;
 }
+
+/* .hero__form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.hero__form-element {
+  width: 75%;
+} */
 
 @media screen and (max-width: 1000px) {
   .hero__hook {
@@ -115,41 +146,34 @@
 }
 
 @media screen and (max-width: 700px) {
-  .hero {
-    padding-top: 0.5em;
-  }
-
   .hero__container {
     flex-direction: column-reverse;
     align-items: center;
-    padding-top: 0;
   }
 
   .hero__container_text {
     width: 90%;
-    padding-left: 0;
     text-align: center;
-  }
-
-  .hero__logo {
-    padding-bottom: 0;
   }
 
   .hero__img {
-    width: 90%;
-    margin: 0.5em auto;
+    display: none;
+  }
+
+  .hero__header {
+    padding-bottom: 0.5em;
   }
 
   .hero__hook {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 300;
     text-align: center;
+    padding: 0.2em 0;
   }
 
   .hero__title {
     font-size: 1.5rem;
     font-weight: 300;
-    text-align: center;
   }
 
   .hero__subtitle {
@@ -166,27 +190,5 @@
   .hero__btn {
     font-size: 1rem;
     font-weight: 300;
-  }
-}
-
-@media screen and (max-width: 300px) {
-  .hero__hook {
-    font-size: 1rem;
-  }
-
-  .hero__title {
-    font-size: 1.3rem;
-  }
-
-  .hero__subtitle {
-    font-size: 1rem;
-  }
-
-  .hero__date {
-    font-size: 1rem;
-  }
-
-  .hero__btn {
-    font-size: 1rem;
   }
 }

@@ -74,6 +74,7 @@ function App() {
         email: '',
       });
       setLoading(false);
+      console.log(formValues);
       return;
     } catch (error) {
       setLoading(false);
@@ -118,6 +119,9 @@ function App() {
           path="/registro"
           element={
             <Registro
+              localDate={localDate}
+              hour={hour}
+              count={count}
               onSubmit={handleSubmit}
               onChange={handleChange}
               sentUser={sentUser}

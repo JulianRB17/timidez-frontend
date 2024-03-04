@@ -23,8 +23,19 @@
   padding-top: 2%;
 }
 
+.registro-call-to-action__container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  min-width: 250px;
+}
+
 @media screen and (max-width: 700px) {
   .registro-call-to-action__hook {
     font-size: 1.5rem;
+  }
+
+  .registro-call-to-action__container {
+    width: 80%;
   }
 }

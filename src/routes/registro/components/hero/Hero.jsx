@@ -1,8 +1,21 @@
 import { motion } from 'framer-motion';
 import picSrc from '../../../../assets/overlay-blue-s.webp';
 import logoSrc from '../../../../assets/logo-transparente.png';
+import Form from './../../../../components/form/Form';
 
-export default function Hero({ localDate, hour, count }) {
+export default function Hero({
+  localDate,
+  hour,
+  count,
+  onSubmit,
+  onChange,
+  sentUser,
+  isValidForm,
+  loading,
+  msgSuccess,
+  setSentUser,
+  formValues,
+}) {
   return (
     <section className="hero">
       <div className="hero__header">
@@ -40,14 +53,11 @@ export default function Hero({ localDate, hour, count }) {
               transition: { duration: 1 },
             }}
           >
-            3 secretos de actrices y actores para socializar y no morir de
-            vergüenza en el intento{' '}
-            <span className="hero__title_accent">
-              (aunque nunca hayas actuado)
-            </span>
+            Aprende a socializar sin miedo: 3 secretos de actores y actrices
+            revelados
           </motion.h1>
 
-          <motion.h3
+          <motion.p
             className="hero__subtitle"
             initial={{
               opacity: 0,
@@ -59,12 +69,14 @@ export default function Hero({ localDate, hour, count }) {
               transition: { duration: 1 },
             }}
           >
-            Aprende de un experto en relaciones humanas herramientas para dejar
+            Descubre cómo los expertos en actuación superan el miedo al hablar
+            en público y aplica sus técnicas a tu vida social.
+            {/* Aprende de un experto en relaciones humanas herramientas para dejar
             de ser la persona tímida del fondo de la habitación y empezar a
-            generar conexiones genuinas con otras personas.
-          </motion.h3>
+            generar conexiones genuinas con otras personas. */}
+          </motion.p>
 
-          <motion.h3
+          {/* <motion.p
             className="hero__subtitle"
             initial={{
               opacity: 0,
@@ -76,10 +88,10 @@ export default function Hero({ localDate, hour, count }) {
               transition: { duration: 1 },
             }}
           >
-            Masterclass apta para{' '}
             <span className="hero__hook_accent">CUALQUIER PERSONA</span> que
-            sienta que es un personaje secundario en su vida.
-          </motion.h3>
+            Descubre las herramientas de expertos en relaciones humanas que te
+            ayudarán asienta que es un personaje secundario en su vida.
+          </motion.p> */}
 
           <motion.div
             className="hero__btn-container"
@@ -98,7 +110,7 @@ export default function Hero({ localDate, hour, count }) {
               <p className="hero__date">{hour} hrs</p>
               <p className="hero__date">{count ? count : '¡Ya iniciamos!'}</p>
             </motion.div>
-            <motion.a
+            {/* <motion.a
               className="hero__btn"
               href="#form"
               whileHover={{
@@ -107,10 +119,25 @@ export default function Hero({ localDate, hour, count }) {
               whileTap={{ scale: 0.9 }}
             >
               Regístrate GRATIS
-            </motion.a>
+            </motion.a> */}
           </motion.div>
+          <img src={picSrc} alt="Retrato" className="hero__img" />
         </div>
-        <img src={picSrc} alt="Retrato" className="hero__img" />
+
+        <div className="hero__container_img">
+          <div className="hero__container_form">
+            <Form
+              onSubmit={onSubmit}
+              onChange={onChange}
+              sentUser={sentUser}
+              isValidForm={isValidForm}
+              loading={loading}
+              msgSuccess={msgSuccess}
+              setSentUser={setSentUser}
+              formValues={formValues}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

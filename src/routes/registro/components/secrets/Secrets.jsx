@@ -9,7 +9,7 @@ export default function Secrets() {
   return (
     <section className="secrets">
       <div className="secrets__separator" />
-      <h1 className="secrets__title">Los 3 secretos que veremos:</h1>
+      <h1 className="secrets__title">Qué aprenderas en esta clase:</h1>
       <div className="secrets__container">
         <div className="secrets__element">
           <motion.h2

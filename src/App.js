@@ -74,7 +74,6 @@ function App() {
         email: '',
       });
       setLoading(false);
-      console.log(formValues);
       return;
     } catch (error) {
       setLoading(false);

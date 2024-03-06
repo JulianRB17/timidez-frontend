@@ -13,7 +13,7 @@ export default function RegistroCallToAction({
   return (
     <section className="registro-call-to-action">
       <p className="registro-call-to-action__hook">
-        No sigas perdiéndote de la vida por el terror al juicio ajeno.
+        {/* No sigas perdiéndote de la vida por el terror al juicio ajeno. */}
       </p>
       <div className="registro-call-to-action__container">
         <Form

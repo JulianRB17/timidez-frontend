@@ -40,10 +40,11 @@
 }
 
 .bio__img {
-  position: sticky;
+  position: relative;
   width: 35%;
   height: 35%;
-  top: 20px;
+  /* top: 20px; */
+  align-self: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -53,7 +54,7 @@
 
   .bio__img {
     position: relative;
-    width: 40%;
+    width: 60%;
     height: auto;
     align-self: flex-end;
   }

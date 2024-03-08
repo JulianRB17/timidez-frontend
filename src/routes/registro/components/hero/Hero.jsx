@@ -53,8 +53,8 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            Aprende a socializar sin miedo: 3 secretos de actores y actrices
-            revelados
+            Conoce las 3 claves para mejorar tus relaciones sociales sin morir
+            de vergüenza en el intento
           </motion.h1>
 
           <motion.p
@@ -69,8 +69,8 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            Descubre cómo los expertos en actuación superan el miedo al hablar
-            en público y aplica sus técnicas a tu vida social.
+            Descubre cómo los expertos en actuación superan el miedo a hablar en
+            público y aplica sus técnicas a tu vida social.
             {/* Aprende de un experto en relaciones humanas herramientas para dejar
             de ser la persona tímida del fondo de la habitación y empezar a
             generar conexiones genuinas con otras personas. */}
@@ -121,23 +121,23 @@ export default function Hero({
               Regístrate GRATIS
             </motion.a> */}
           </motion.div>
-          <img src={picSrc} alt="Retrato" className="hero__img" />
         </div>
 
-        <div className="hero__container_img">
-          <div className="hero__container_form">
-            <Form
-              onSubmit={onSubmit}
-              onChange={onChange}
-              sentUser={sentUser}
-              isValidForm={isValidForm}
-              loading={loading}
-              msgSuccess={msgSuccess}
-              setSentUser={setSentUser}
-              formValues={formValues}
-            />
-          </div>
+        {/* <div className="hero__container_img"> */}
+        <div className="hero__container_form">
+          <Form
+            onSubmit={onSubmit}
+            onChange={onChange}
+            sentUser={sentUser}
+            isValidForm={isValidForm}
+            loading={loading}
+            msgSuccess={msgSuccess}
+            setSentUser={setSentUser}
+            formValues={formValues}
+          />
+          {/* </div> */}
         </div>
+        <img src={picSrc} alt="Retrato" className="hero__img" />
       </div>
     </section>
   );

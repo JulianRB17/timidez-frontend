@@ -58,8 +58,8 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            Descubre los 3 secretos para aprender a socializar mejor sin tener
-            que pasar vergüenza o juicio ajeno.
+            Conoce las 3 claves para ser más sociable a pesar del miedo al
+            ridículo y al juicio ajeno.
           </motion.h1>
 
           <motion.p
@@ -74,7 +74,7 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            Conoce cómo los expertos en actuación
+            Descubre cómo los expertos en actuación
             <span className="hero__accent">
               {' '}
               superan el miedo a hablar en público{' '}

@@ -54,7 +54,7 @@ export default function Form({
       <h1 className="form__title">Regístrate GRATIS</h1>
       <div className="form__input-container">
         <label htmlFor="name" className="form__label">
-          Nombre:
+          Primer nombre:
         </label>
         <input
           type="text"

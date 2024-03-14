@@ -33,7 +33,7 @@ export default function Host() {
             JULIÁN REYES BOTELLO
           </motion.a>
           <p className="host__text">
-            Actor y director escénico con 10 años de experiencia
+            Actor y director escénico con 12 años de experiencia
           </p>
         </div>
         <motion.a

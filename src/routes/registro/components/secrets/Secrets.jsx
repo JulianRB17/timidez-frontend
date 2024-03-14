@@ -25,9 +25,9 @@ export default function Secrets() {
           </p>
           <p className="secrets__text">
             Porque sí, existe y como cualquier tipo de inteligencia se puede
-            DESARROLLAR.
+            <span className="secrets__accent"> desarrollar</span>.
           </p>
-          <p className="secrets__text">
+          <p className="secrets__text secrets__accent">
             Aprende cómo volverte más inteligente socialmente.
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function Secrets() {
             qué decir. Muchas personas recomiendan preguntar algo... pero ¿y si
             no se te ocurre nada?
           </p>
-          <p className="secrets__text">
+          <p className="secrets__text secrets__accent">
             Aprende el porqué existen estos silencios y herramientas claras,
             probadas y específicas de qué hacer con ellos.
           </p>
@@ -68,15 +68,21 @@ export default function Secrets() {
             ¿Qué es la timidez? ¿Se puede hacer algo con ella?
           </p>
           <p className="secrets__text">
-            La timidez no es algo malo, gran parte del mundo somos gente tímida.
-            La gente tímida no estamos rota. El problema está cuando ésta
-            controla tu vida y muchas veces nos paraliza.
+            <span className="secrets__accent">La timidez no es algo malo</span>,
+            gran parte del mundo somos gente tímida.
+            <span className="secrets__accent">
+              {' '}
+              La gente tímida no estamos rota.{' '}
+            </span>
+            El problema está cuando ésta controla tu vida y muchas veces nos
+            paraliza.
             {/* Aprende a valorar tu timidez, a dialogar con ella y que esto no
             implica volverte una persona ruidosa o dejar de ser tú. */}
           </p>
           <p className="secrets__text">
             Aprende cómo tener una mejor relación con tu timidez sin que esto
-            implique volverte una persona ruidosa o dejar de ser tú.
+            implique volverte una persona ruidosa o
+            <span className="secrets__accent"> dejar de ser tú.</span>
           </p>
         </div>
       </div>

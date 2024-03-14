@@ -58,8 +58,8 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            Conoce las 3 claves para mejorar tus relaciones sociales sin morir
-            de vergüenza en el intento
+            Descubre los 3 secretos para aprender a socializar mejor sin tener
+            que pasar vergüenza o juicio ajeno.
           </motion.h1>
 
           <motion.p
@@ -74,8 +74,13 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            Descubre cómo los expertos en actuación superan el miedo a hablar en
-            público y aplica sus técnicas a tu vida social.
+            Conoce cómo los expertos en actuación
+            <span className="hero__accent">
+              {' '}
+              superan el miedo a hablar en público{' '}
+            </span>
+            y aplica sus técnicas a{' '}
+            <span className="hero__accent">tu vida social.</span>
             {/* Aprende de un experto en relaciones humanas herramientas para dejar
             de ser la persona tímida del fondo de la habitación y empezar a
             generar conexiones genuinas con otras personas. */}

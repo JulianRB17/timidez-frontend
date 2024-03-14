@@ -6,12 +6,6 @@ body {
   color: #ccc7e1;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'BebasNeue';
-}
-
 .hidden {
   display: none;
   opacity: 0;

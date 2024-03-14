@@ -13,9 +13,16 @@
 }
 
 .hero__logo {
-  width: 20%;
-  padding-left: 4%;
+  width: 100%;
+  height: fit-content;
+}
+
+.hero__container_logo {
   min-width: 15em;
+  height: fit-content;
+  margin-top: 1em;
+  width: 40%;
+  justify-content: center;
 }
 
 .hero__container {
@@ -27,25 +34,33 @@
   display: flex;
   flex-direction: column;
   width: 70%;
+  padding-right: 2%;
   align-items: center;
   position: relative;
-  margin-bottom: 15%;
+}
+
+.hero__disclaimer {
+  color: #071a55;
+  margin: 0;
+  text-align: center;
 }
 
 .hero__img {
   /* width: 25%;
   height: fit-content;
   align-self: flex-start; */
-  width: 18%;
+  width: 30%;
   height: fit-content;
-  position: absolute;
+  align-self: end;
+  /* position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 
 .hero__hook {
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 500;
+  line-height: 1.5em;
   text-align: center;
   margin: 0;
   padding: 0.5em;
@@ -57,7 +72,7 @@
 }
 
 .hero__title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #e17900;
   margin: 0;
   font-weight: 500;
@@ -65,7 +80,7 @@
   position: relative;
   z-index: 1;
   text-align: center;
-  padding: 0.8em;
+  padding: 0.5em 0 0;
 }
 
 .hero__title_accent {
@@ -74,14 +89,19 @@
 }
 
 .hero__subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   margin: 0;
   color: #000821;
   position: relative;
   z-index: 1;
-  padding: 0.5em 1em;
-  text-shadow: 3px 3px #ccc7e1;
+  padding: 0.5em 0 1em;
+  text-shadow: 1px 1px #ccc7e1;
+  text-align: center;
+}
+
+.hero__subtitle_accent {
+  font-weight: 500;
 }
 
 .hero__btn-container {
@@ -112,6 +132,7 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  margin-bottom: 1em;
 }
 
 .hero__date {
@@ -119,8 +140,14 @@
   color: #000821;
   z-index: 2;
   font-size: 1.5rem;
-  margin: 0.5em;
+  margin: 0;
   text-align: center;
+}
+
+.hero__date_accent {
+  font-size: 2rem;
+  margin: 0.6em 0 0.3em;
+  font-weight: 700;
 }
 
 .hero__container_form {
@@ -133,7 +160,7 @@
 
 .hero__container_img {
   position: relative;
-  width: 23%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -141,20 +168,8 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .hero__hook {
-    font-weight: 300;
-  }
-
   .hero__title {
-    font-weight: 300;
-  }
-
-  .hero__subtitle {
-    font-weight: 300;
-  }
-
-  .hero__btn {
-    font-weight: 300;
+    font-size: 2.5rem;
   }
 }
 
@@ -184,20 +199,17 @@
 
   .hero__hook {
     font-size: 1rem;
-    font-weight: 200;
     text-align: center;
     padding: 0.2em;
   }
 
   .hero__title {
     font-size: 1.5rem;
-    font-weight: 300;
     padding: 0.5em;
   }
 
   .hero__subtitle {
     font-size: 1.2rem;
-    font-weight: 300;
     text-align: center;
     margin: 0;
     padding-top: 0;
@@ -209,6 +221,5 @@
 
   .hero__btn {
     font-size: 1rem;
-    font-weight: 300;
   }
 }

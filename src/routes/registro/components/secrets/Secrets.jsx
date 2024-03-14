@@ -8,8 +8,7 @@ const animationVariants = {
 export default function Secrets() {
   return (
     <section className="secrets">
-      <div className="secrets__separator" />
-      <h1 className="secrets__title">Qué aprenderas en esta clase:</h1>
+      <h1 className="secrets__title">Qué aprenderás en esta clase:</h1>
       <div className="secrets__container">
         <div className="secrets__element">
           <motion.h2
@@ -26,7 +25,7 @@ export default function Secrets() {
           </p>
           <p className="secrets__text">
             Porque sí, existe y como cualquier tipo de inteligencia se puede
-            DESARROLLAR. También se le llama inteligencia interpersonal.
+            DESARROLLAR.
           </p>
           <p className="secrets__text">
             Aprende cómo volverte más inteligente socialmente.
@@ -70,8 +69,8 @@ export default function Secrets() {
           </p>
           <p className="secrets__text">
             La timidez no es algo malo, gran parte del mundo somos gente tímida.
-            El problema está cuando ésta controla tu vida y muchas veces nos
-            paraliza.
+            La gente tímida no estamos rota. El problema está cuando ésta
+            controla tu vida y muchas veces nos paraliza.
             {/* Aprende a valorar tu timidez, a dialogar con ella y que esto no
             implica volverte una persona ruidosa o dejar de ser tú. */}
           </p>
@@ -81,7 +80,6 @@ export default function Secrets() {
           </p>
         </div>
       </div>
-      <div className="secrets__separator" />
     </section>
   );
 }

@@ -1,27 +1,24 @@
 import { motion } from 'framer-motion';
 import picSrc from '../../../../assets/overlay-blue-s.webp';
-import logoSrc from '../../../../assets/logo-transparente.png';
-import Form from './../../../../components/form/Form';
+import logoSrc from '../../../../assets/logo-oscuro-transparente.png';
+// import Form from './../../../../components/form/Form';
 
 export default function Hero({
   localDate,
   hour,
   count,
-  onSubmit,
-  onChange,
-  sentUser,
-  isValidForm,
-  loading,
-  msgSuccess,
-  setSentUser,
-  formValues,
+  // onSubmit,
+  // onChange,
+  // sentUser,
+  // isValidForm,
+  // loading,
+  // msgSuccess,
+  // setSentUser,
+  // formValues,
 }) {
   return (
     <section className="hero">
       <div className="hero__header">
-        <div className="hero__logo-container">
-          <img src={logoSrc} alt="logo" className="hero__logo" />
-        </div>
         <motion.h2
           className="hero__hook"
           initial={{
@@ -34,13 +31,21 @@ export default function Hero({
             transition: { duration: 1 },
           }}
         >
-          Descubre cómo es que puedes mejorar tus habilidades sociales. Vuélvete
-          el protagonista de tu vida.
+          {/* Descubre cómo es que puedes mejorar tus habilidades sociales. Vuélvete
+          el protagonista de tu vida. */}
+          ¿Sientes que eres un personaje secundario en tu vida? ¿Todo el tiempo
+          tienes silencios incómodos cuando intentas hablar con alguien?
+          ¿Quieres cambiar esto y generar más relaciones significativas en tu
+          vida? Estás en el lugar indicado:
         </motion.h2>
       </div>
 
       <div className="hero__container">
+        <img src={picSrc} alt="Retrato" className="hero__img" />
         <div className="hero__container_text">
+          <div className="hero__container_logo">
+            <img src={logoSrc} alt="logo" className="hero__logo" />
+          </div>
           <motion.h1
             className="hero__title"
             initial={{
@@ -105,12 +110,7 @@ export default function Hero({
               transition: { duration: 1 },
             }}
           >
-            <motion.div className="hero__date-container">
-              <p className="hero__date">{localDate}</p>
-              <p className="hero__date">{hour} hrs</p>
-              <p className="hero__date">{count ? count : '¡Ya iniciamos!'}</p>
-            </motion.div>
-            {/* <motion.a
+            <motion.a
               className="hero__btn"
               href="#form"
               whileHover={{
@@ -119,12 +119,22 @@ export default function Hero({
               whileTap={{ scale: 0.9 }}
             >
               Regístrate GRATIS
-            </motion.a> */}
+            </motion.a>
+            <p className="hero__disclaimer">
+              Me es muy importante que sepas que tus datos están totalmente
+              seguros y no se compartirán con nadie.
+            </p>
+            <motion.div className="hero__date-container">
+              <p className="hero__date hero__date_accent">¿Cuándo?</p>
+              <p className="hero__date">{localDate}</p>
+              <p className="hero__date">{hour} hrs</p>
+              <p className="hero__date">{count ? count : '¡Ya iniciamos!'}</p>
+            </motion.div>
           </motion.div>
         </div>
 
         {/* <div className="hero__container_img"> */}
-        <div className="hero__container_form">
+        {/* <div className="hero__container_form">
           <Form
             onSubmit={onSubmit}
             onChange={onChange}
@@ -136,8 +146,7 @@ export default function Hero({
             formValues={formValues}
           />
           {/* </div> */}
-        </div>
-        <img src={picSrc} alt="Retrato" className="hero__img" />
+        {/* </div> */}
       </div>
     </section>
   );

@@ -12,7 +12,7 @@
 }
 
 .bio__text-container {
-  margin: 7%;
+  margin: 5% 2%;
 }
 
 .bio__title {
@@ -36,7 +36,8 @@
 .bio__text-accent {
   font-size: 1.3rem;
   color: #e17900;
-  font-weight: 700;
+  font-weight: 600;
+  text-shadow: #000821 1px 1px;
 }
 
 .bio__img {
@@ -52,19 +53,27 @@
     flex-direction: column-reverse;
   }
 
+  .bio__text-container {
+    margin: 0 3% 2%;
+  }
+
   .bio__img {
     position: relative;
     width: 60%;
     height: auto;
     align-self: flex-end;
   }
+
+  .bio__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 0 0.5em;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .bio__title {
-    font-size: 2rem;
-    text-align: center;
-    margin: 1em 0;
+    font-size: 1.5rem;
   }
 
   .bio__subtitle {

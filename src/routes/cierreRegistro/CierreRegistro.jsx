@@ -21,11 +21,11 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
               transition: { duration: 1 },
             }}
           >
-            ¡Listo! En este momento te debe estar llgando un mail que confirma
+            ¡Listo! En este momento te debe estar llegando un mail que confirma
             tu registro a esta clase gratuita:{' '}
             <span className="cierre-registro__title_accent">
-              3 secretos de actrices y actores para socializar y no morir de
-              vergüenza en el intento (aunque nunca hayas actuado)
+              Conoce las 3 claves para ser más sociable a pesar del miedo al
+              ridículo y al juicio ajeno.
             </span>
           </motion.h2>
 
@@ -127,7 +127,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
                 Finalmente, te comparto mis redes donde estoy subiendo contenido
                 gratuito
               </p>
-              <motion.a
+              {/* <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}
                 whileInView={{
@@ -141,7 +141,7 @@ export default function CierreRegistro({ localDate, count, urls, hour }) {
                 href={igUrl}
               >
                 Instagram
-              </motion.a>
+              </motion.a> */}
               {/* <motion.a
                 className="cierre-registro__btn"
                 initial={{ opacity: 0.5 }}

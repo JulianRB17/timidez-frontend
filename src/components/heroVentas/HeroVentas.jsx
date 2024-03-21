@@ -49,10 +49,10 @@ export default function HeroVentas() {
         />
       </motion.div>
       <div className="hero-ventas__credits-container">
-        <p className="hero-ventas__credits">Fotografía: Carlos Alvar</p>
+        {/* <p className="hero-ventas__credits">Fotografía: Carlos Alvar</p>
         <p className="hero-ventas__credits">
           Dirección escénica: Julián Reyes Botello
-        </p>
+        </p> */}
       </div>
     </section>
   );

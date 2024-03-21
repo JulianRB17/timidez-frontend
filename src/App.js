@@ -50,6 +50,7 @@ function App() {
   const handleChange = (e) => {
     const { target } = e;
     const { id, value } = target;
+
     setFormValues({
       ...formValues,
       [id]: value,
@@ -60,6 +61,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    window.fbq('track', 'Lead');
     try {
       const contactData = await api.postContact(formValues);
       if (contactData.contactList) {
@@ -117,19 +119,22 @@ function App() {
         <Route
           path="/registro"
           element={
-            <Registro
-              localDate={localDate}
-              hour={hour}
-              count={count}
-              onSubmit={handleSubmit}
-              onChange={handleChange}
-              sentUser={sentUser}
-              isValidForm={isValidForm}
-              loading={loading}
-              msgSuccess={msgSuccess}
-              setSentUser={setSentUser}
-              formValues={formValues}
-            />
+            <>
+              {/* <Pixel /> */}
+              <Registro
+                localDate={localDate}
+                hour={hour}
+                count={count}
+                onSubmit={handleSubmit}
+                onChange={handleChange}
+                sentUser={sentUser}
+                isValidForm={isValidForm}
+                loading={loading}
+                msgSuccess={msgSuccess}
+                setSentUser={setSentUser}
+                formValues={formValues}
+              />
+            </>
           }
         />
         <Route path="/repeticion" element={<Repeticion urls={urls} />} />

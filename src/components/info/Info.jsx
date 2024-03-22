@@ -21,9 +21,9 @@ export default function Info({ dates }) {
             Reconciliandome con mi timidez: herramientas actorales para la vida
             diaria
           </span>{' '}
-          ayuda a personas tímidas a desarrollar su inteligencia interpersonal e
-          interpersonal para no sentirse solas ofreciendo herramientas actorales
-          que puedan usar aunque nunca hayan actuado.
+          ayuda a personas tímidas a desarrollar su inteligencia social
+          ofreciendo herramientas actorales que puedan usar aunque nunca hayan
+          actuado.
         </motion.p>
 
         <motion.p
@@ -45,7 +45,7 @@ export default function Info({ dates }) {
           initial={{ opacity: 0.5, y: '-0.5rem' }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
         >
-          Generar experiencias nuevas: d esarrollo de habilidades sociales
+          Generar experiencias nuevas: desarrollo de habilidades sociales
         </motion.h3>
         <motion.p
           className="info__text"

@@ -23,8 +23,8 @@ export default function Precio({ buyoutUrl }) {
       >
         <div className="precio__element">
           <p className="precio__nombre">
-            Programa Di adios a la timidez: herramientas actorales para la vida
-            diaria
+            Programa: Reconciliándome con mi timidez: herramientas actorales
+            para la vida diaria
           </p>
           <p className="precio__numero">397 USD</p>
         </div>

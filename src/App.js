@@ -61,7 +61,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    window.fbq('track', 'Lead');
+    // window.fbq('track', 'Lead');
     try {
       const contactData = await api.postContact(formValues);
       if (contactData.contactList) {

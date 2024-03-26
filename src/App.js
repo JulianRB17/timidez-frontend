@@ -9,6 +9,7 @@ import Repeticion from './routes/repeticion/Repeticion';
 import { countdown } from './utils/countdown';
 import NotFound from './routes/notFound/NotFound';
 import api from './utils/api';
+import ReactPixel from './utils/metaPixel';
 
 function App() {
   const [formValues, setFormValues] = useState({
@@ -61,7 +62,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    // window.fbq('track', 'Lead');
+
     try {
       const contactData = await api.postContact(formValues);
       if (contactData.contactList) {
@@ -75,6 +76,7 @@ function App() {
         username: '',
         email: '',
       });
+      ReactPixel.track('CompleteRegistration');
       setLoading(false);
       return;
     } catch (error) {

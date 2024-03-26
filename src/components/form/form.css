@@ -116,6 +116,26 @@
   z-index: 1;
 }
 
+.form__input-container_privacidad {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.form__input_privacidad {
+  margin-right: 0.5em;
+  width: 1.3em;
+  border-radius: 10em;
+}
+
+.form__label_privacidad {
+  font-size: 1.3rem;
+}
+
+.form__label_privacidad:visited {
+  color: #4c73f1;
+}
+
 @media screen and (max-width: 700px) {
   .form {
     width: 80%;
@@ -128,6 +148,10 @@
   .form__label {
     font-size: 1.5rem;
   }
+
+  .form__label_privacidad {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -137,6 +161,10 @@
 
   .form__label {
     font-size: 1rem;
+  }
+
+  .form__label_privacidad {
+    font-size: 0.8rem;
   }
 
   .form__title {

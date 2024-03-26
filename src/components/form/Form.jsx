@@ -81,6 +81,28 @@ export default function Form({
           value={formValues.email}
         />
         <p className="form__error-msg">Escribe un email válido.</p>
+        <div className="form__input-container_privacidad">
+          <input
+            type="checkbox"
+            onChange={onChange}
+            className="form__input_privacidad"
+            id="privacidad"
+            required
+          />
+          <label
+            htmlFor="accept"
+            className="form__label form__label_privacidad"
+          >
+            Acepto{' '}
+            <a
+              href="/privacidad"
+              className="form__label_privacidad form__link"
+              onChange={onChange}
+            >
+              Política de privacidad
+            </a>
+          </label>
+        </div>
       </div>
       <SendBtn />
       <div className="form__overlay" />

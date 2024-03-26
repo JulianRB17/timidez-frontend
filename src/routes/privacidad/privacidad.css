@@ -1,0 +1,29 @@
+.privacidad {
+  background-color: #000821;
+  min-height: 100vh;
+  padding: 5%;
+}
+
+.privacidad__title {
+  font-size: 3rem;
+  margin: 1em 0;
+}
+
+.privacidad__subtitle {
+  font-size: 2rem;
+  margin: 0.5em 0;
+}
+
+.privacidad__text {
+  font-size: 1.5rem;
+  margin: 0.5em 0;
+  text-align: justify;
+}
+
+.privacidad__text_justified {
+  margin-left: 3em;
+}
+
+.privacidad__text_accent {
+  font-weight: 700;
+}

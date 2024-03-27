@@ -11,6 +11,7 @@ import NotFound from './routes/notFound/NotFound';
 import api from './utils/api';
 import ReactPixel from './utils/metaPixel';
 import Privacidad from './routes/privacidad/Privacidad';
+import CookiesNotice from './components/cookiesNotice/CookiesNotice';
 
 function App() {
   const [formValues, setFormValues] = useState({
@@ -27,6 +28,7 @@ function App() {
   const [timestamp, setTimestamp] = useState('');
   const [urls, setUrls] = useState({});
   const [dates, setDates] = useState({});
+  const [cookiesEstablished, setCookiesEstablished] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -57,7 +59,6 @@ function App() {
       ...formValues,
       [id]: value,
     });
-    console.log(formValues);
     setValidForm(target.form.checkValidity());
   };
 
@@ -92,13 +93,46 @@ function App() {
     }
   };
 
+  const handleCookiesAccept = (e) => {
+    e.preventDefault();
+    ReactPixel.grantConsent();
+    setCookiesEstablished(true);
+  };
+
+  const handleCookiesReject = (e) => {
+    e.preventDefault();
+    ReactPixel.revokeConsent();
+    setCookiesEstablished(true);
+  };
+
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<VentasL urls={urls} dates={dates} />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <CookiesNotice
+                cookiesEstablished={cookiesEstablished}
+                onCookiesAccept={handleCookiesAccept}
+                onCookiesReject={handleCookiesReject}
+              />
+              <VentasL urls={urls} dates={dates} />
+            </>
+          }
+        />
         <Route
           path="/programa-s"
-          element={<VentasS urls={urls} dates={dates} />}
+          element={
+            <>
+              <CookiesNotice
+                cookiesEstablished={cookiesEstablished}
+                onCookiesAccept={handleCookiesAccept}
+                onCookiesReject={handleCookiesReject}
+              />
+              <VentasS urls={urls} dates={dates} />
+            </>
+          }
         />
         <Route
           path="/cierre-r"
@@ -124,7 +158,11 @@ function App() {
           path="/registro"
           element={
             <>
-              {/* <Pixel /> */}
+              <CookiesNotice
+                cookiesEstablished={cookiesEstablished}
+                onCookiesAccept={handleCookiesAccept}
+                onCookiesReject={handleCookiesReject}
+              />
               <Registro
                 localDate={localDate}
                 hour={hour}

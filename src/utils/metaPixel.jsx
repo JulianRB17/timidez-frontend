@@ -7,6 +7,7 @@ const options = {
   debug: false, // enable logs
 };
 ReactPixel.init(FB_PIXEL_ID, advancedMatching, options);
+ReactPixel.revokeConsent();
 
 export default ReactPixel;
 

@@ -25,6 +25,7 @@
 @import url('./components/presentacion/presentacion.css');
 @import url('./components/venta/venta.css');
 @import url('./components/form/form.css');
+@import url('./components/cookiesNotice/cookiesNotice.css');
 
 @import url('./routes/cierreRegistro/cierreRegistro.css');
 @import url('./routes/cierreVenta/cierreVenta.css');

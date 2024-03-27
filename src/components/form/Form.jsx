@@ -94,11 +94,7 @@ export default function Form({
             className="form__label form__label_privacidad"
           >
             Acepto{' '}
-            <a
-              href="/privacidad"
-              className="form__label_privacidad form__link"
-              onChange={onChange}
-            >
+            <a href="/privacidad" className="form__label_privacidad form__link">
               Política de privacidad
             </a>
           </label>

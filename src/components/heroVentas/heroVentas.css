@@ -1,6 +1,6 @@
 .hero-ventas {
   background-image: url('../../assets/fondo-ventas.webp');
-  height: 100vh;
+  min-height: 100vh;
   justify-content: space-between;
   background-attachment: fixed;
   background-position: center;

@@ -68,6 +68,7 @@ function App() {
 
     try {
       const contactData = await api.postContact(formValues);
+      console.log(contactData);
       if (contactData.contactList) {
         setMsgSuccess(true);
         setSentUser(true);
@@ -79,7 +80,6 @@ function App() {
         username: '',
         email: '',
       });
-      console.log(window.fbq);
       setLoading(false);
       return;
     } catch (error) {

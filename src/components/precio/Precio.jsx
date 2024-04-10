@@ -37,30 +37,30 @@ export default function Precio({ buyoutUrl }) {
           <p className="precio__nombre">
             Masterclass: ¿Qué es una amistad saludable?
           </p>{' '}
-          <p className="precio__numero">42 USD</p>
+          <p className="precio__numero">46 USD</p>
         </div>
 
         <div className="precio__element">
           <p className="precio__nombre">
             Masterclass: Estrategias de memorización
           </p>
-          <p className="precio__numero">42 USD</p>
+          <p className="precio__numero">46 USD</p>
         </div>
 
         <div className="precio__element">
           <p className="precio__nombre">Infografía: ¿Qué es la autoestima?</p>
-          <p className="precio__numero">13 USD</p>
+          <p className="precio__numero">14 USD</p>
         </div>
 
         <div className="precio__element precio__element_total">
           <p className="precio__nombre precio__nombre_total">VALOR TOTAL</p>
-          <p className="precio__numero  precio__numero_total">611 USD</p>
+          <p className="precio__numero  precio__numero_total">620 USD</p>
         </div>
       </motion.div>
       <p className="precio__text">
-        El valor total del programa completo y los bonos es de 611 USD... sin
-        embargo, sólo hoy, tienes un acceso a un descuento exclusivo disponible
-        únicamente en esta página:
+        El valor total del programa completo y los bonos es de 620 USD... sin
+        embargo, durante esta semana, tienes un acceso a un descuento exclusivo
+        disponible únicamente en esta página:
       </p>
       <motion.div
         className="precio__container"
@@ -76,7 +76,7 @@ export default function Precio({ buyoutUrl }) {
       <p className="precio__text">
         Así es, asegurando tu lugar en el programa Reconciliándome con mi
         timidez: herramientas actorales para la vida diaria te llevas un valor
-        total de 611 USD
+        total de 620 USD
       </p>
       <p className="precio__text precio__text_accent">por sólo 217 USD</p>.
       <motion.a

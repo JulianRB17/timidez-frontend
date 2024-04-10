@@ -9,7 +9,7 @@ import Repeticion from './routes/repeticion/Repeticion';
 import { countdown } from './utils/countdown';
 import NotFound from './routes/notFound/NotFound';
 import api from './utils/api';
-import ReactPixel from './utils/metaPixel';
+import { Pixel } from './utils/metaPixel';
 import Privacidad from './routes/privacidad/Privacidad';
 import CookiesNotice from './components/cookiesNotice/CookiesNotice';
 
@@ -28,7 +28,7 @@ function App() {
   const [timestamp, setTimestamp] = useState('');
   const [urls, setUrls] = useState({});
   const [dates, setDates] = useState({});
-  const [cookiesEstablished, setCookiesEstablished] = useState(false);
+  const [cookiesEstablished, setCookiesEstablished] = useState(true);
 
   useEffect(() => {
     (async () => {
@@ -79,7 +79,7 @@ function App() {
         username: '',
         email: '',
       });
-      ReactPixel.track('CompleteRegistration');
+      console.log(window.fbq);
       setLoading(false);
       return;
     } catch (error) {
@@ -95,13 +95,13 @@ function App() {
 
   const handleCookiesAccept = (e) => {
     e.preventDefault();
-    ReactPixel.grantConsent();
+    // Pixel.grantConsent();
     setCookiesEstablished(true);
   };
 
   const handleCookiesReject = (e) => {
     e.preventDefault();
-    ReactPixel.revokeConsent();
+    // Pixel.revokeConsent();
     setCookiesEstablished(true);
   };
 
@@ -112,6 +112,7 @@ function App() {
           path="/"
           element={
             <>
+              <Pixel />
               <CookiesNotice
                 cookiesEstablished={cookiesEstablished}
                 onCookiesAccept={handleCookiesAccept}

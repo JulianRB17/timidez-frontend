@@ -3,8 +3,6 @@ import Hero from './components/hero/Hero';
 import Secrets from './components/secrets/Secrets';
 import Bio from '../../components/bio/Bio';
 import RegistroCallToAction from './components/registroCallToAction/RegistroCallToAction';
-import ReactPixel from '../../utils/metaPixel';
-import { useEffect } from 'react';
 
 export default function Registro({
   localDate,
@@ -19,10 +17,6 @@ export default function Registro({
   setSentUser,
   formValues,
 }) {
-  useEffect(() => {
-    ReactPixel.pageView();
-  }, []);
-
   return (
     <>
       <section className="registro">

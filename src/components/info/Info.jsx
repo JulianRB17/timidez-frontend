@@ -232,7 +232,7 @@ export default function Info({ dates }) {
           whileInView={{ opacity: 1, x: 0, transition: { duration: 1 } }}
         >
           El programa está dividido en 9 módulos que se revisarán a lo largo de
-          6 semanas del{' '}
+          5 semanas del{' '}
           <span className="info__tex info__text_accent">
             {dates.moduleDates}:
           </span>

@@ -59,12 +59,12 @@ export default function Form({
         <input
           type="text"
           className="form__input"
-          id="username"
+          id="firstName"
           placeholder="Escribe tu nombre aquí"
           onChange={onChange}
           maxLength={30}
           required
-          value={formValues.username}
+          value={formValues.firstName}
         />
         <p className="form__error-msg">Escribe tu nombre correctamente.</p>
         <label htmlFor="email" className="form__label">

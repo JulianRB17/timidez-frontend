@@ -15,7 +15,7 @@ import CookiesNotice from './components/cookiesNotice/CookiesNotice';
 
 function App() {
   const [formValues, setFormValues] = useState({
-    username: '',
+    firstName: '',
     email: '',
   });
   const [loading, setLoading] = useState(false);
@@ -68,7 +68,6 @@ function App() {
 
     try {
       const contactData = await api.postContact(formValues);
-      console.log(contactData);
       if (contactData.contactList) {
         setMsgSuccess(true);
         setSentUser(true);
@@ -77,7 +76,7 @@ function App() {
         setMsgSuccess(false);
       }
       setFormValues({
-        username: '',
+        firstName: '',
         email: '',
       });
       setLoading(false);
@@ -86,7 +85,7 @@ function App() {
       setLoading(false);
       console.error(error);
       setFormValues({
-        username: '',
+        firstName: '',
         email: '',
       });
       alert('Ahh, algo salió malo, por favor vuelve a intentarlo.');
@@ -112,7 +111,7 @@ function App() {
           path="/"
           element={
             <>
-              <Pixel />
+              {/* <Pixel /> */}
               <CookiesNotice
                 cookiesEstablished={cookiesEstablished}
                 onCookiesAccept={handleCookiesAccept}
